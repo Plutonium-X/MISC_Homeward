@@ -1,0 +1,29 @@
+
+// b!ar1600.baf - EXTEND_TOP ar1600.bcs 
+
+IF 
+    Global("B!HBJasmineSpawn","AR1600",0) 
+THEN 
+    RESPONSE #100 
+        CreateCreature("b!jasmin",[2133.2110],7)
+        SetGlobal("B!HBJasmineSpawn","AR1600",1) 
+        Continue() 
+END 
+
+IF 
+    Global("B!HBRubySpawn","AR1600",0) 
+THEN 
+    RESPONSE #100 
+        CreateCreature("b!ruby",[2164.2140],7) 
+        SetGlobal("B!HBRubySpawn","AR1600",1) 
+        Continue() 
+END 
+
+IF 
+    Global("B!HBWrenSpawn","AR1600",0) 
+THEN 
+    RESPONSE #100 
+        CreateCreature("b!wren",[2209.2170],7) 
+        SetGlobal("B!HBWrenSpawn","AR1600",1) 
+        Continue() 
+END 

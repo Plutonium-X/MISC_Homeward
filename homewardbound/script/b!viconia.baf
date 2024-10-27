@@ -1,0 +1,42 @@
+
+// b!viconia.baf - installs if player opts to have Homeward Bound *not* kill BioWare romances 
+
+IF 
+    Global("B!HBViconiaSail","GLOBAL",3) //Viconia recruited, romance already restarted once
+    Global("B!HBDidIt","LOCALS",2) 
+    InParty(Myself) 
+    !Global("ViconiaRomanceActive","GLOBAL",0) 
+    !Global("ViconiaRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("B!HBDidIt","LOCALS",3) //Romance dies again, you're on your own.
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!ViconiaSail","GLOBAL",3) 
+    GlobalGT("Lovetalk","LOCALS",0)
+    GlobalLT("Lovetalk","LOCALS",50)
+    Global("ViconiaRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("ViconiaRomanceActive","GLOBAL",1)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("Lovetalk","LOCALS",1) 
+        RealSetGlobalTimer("ViconiaRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!ViconiaSail","GLOBAL",3) 
+    GlobalGT("Lovetalk","LOCALS",49)
+    Global("ViconiaRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("ViconiaRomanceActive","GLOBAL",2)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("Lovetalk","LOCALS",1) 
+        RealSetGlobalTimer("ViconiaRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 

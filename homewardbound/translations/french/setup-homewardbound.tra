@@ -1,0 +1,485 @@
+@9001 = ~[Uu]tilisable[ %tab%]+[Uu]niquement[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+
+
+@0  = ~Homeward Bound~
+@101 = ~Aerie continua sa vie aventureuse après avoir quitté <CHARNAME>, se posant comme une féroce adversaire de toute forme d'esclavage. Un sentiment de vengeance pour ce qui lui avait été pris lors de sa captivité altèra toutefois sa compassion, au point qu'elle aurait pu perdre la raison si elle n'avait rencontré un groupe d'Avariels ailés retenus prisonniers à Cormyr. Ils la persuadèrent de rejoindre Faenya-Dail, sa patrie, où elle apprit beaucoup, notamment qu'elle ne serait jamais plus une Avariel. Elle cessa donc de se lamenter et de tenter de récupérer ses ailes, sachant que c'était désormais inutile. Elle devint une grande prêtresse à Pierrebasse, un village gnome dont lui avait parlé Quayle, son tuteur. Il avait été sa seule vraie famille, et c'est parmi les siens qu'elle trouva enfin la paix.~
+@102 = ~Anomen ne se remit jamais vraiment des mois passés aux côtés de <CHARNAME>. Il fut en effet un témoin privilégié du pouvoir ténébreux qui était en l'enfant de Bhaal, et quelles qu'eûrent été les intentions de <CHARNAME>, cela le troubla grandement dans sa foi. Sa confiance en Helm ébranlée, Anomen erra sans but véritable jusqu'aux frontières de Maztica. Il se retrouva au beau milieu de la révolte menée par Yamash, un clerc démoniaque à la tête d'une armée de monstres. Anomen se trouva entraîné dans ce conflit, et décida alors de porter secours aux soldats assiégés, leur prodiguant conseils et soutien. Il eût tôt fait de comprendre qu'il ne pourrait pas les aider correctement sans leur apprendre le rôle et les devoirs du Gardien. Il leur enseigna la doctrine de Helm, ce qui lui permit de mieux la comprendre qu'auparavant. Finalement, Yamash fut vaincu. Les Disciples d'Anomen avaient triomphé ; un nouvel Ordre était né dans un nouveau pays...~
+@103 = ~Puisqu'on n'avait plus besoin de ses conseils, Cernd quitta <CHARNAME> et retrouva son fils Ahsdale. Mais son sens du devoir le maintint constamment éloigné de son fils, qui en prit ombrage. Cernd fut nommé quelques années plus tard au poste de Grand Druide, mais il apprit alors que son fils s'adonnait à une magie étrange et menait une armée prête à dévaster la Côte des Epées. Cernd abdiqua immédiatement, déclarant qu'il ne pouvait prétendre à ce poste alors qu'il était incapable de préserver l'harmonie dans sa propre famille. La rencontre du père et du fils se finit dans un bain de sang dont aucun ne sortit vivant. Les deux "étrangers" se retrouvèrent donc dans la tombe, unis pour l'éternité. La légende prétend qu'un magnifique chêne poussa à cet endroit, dont les couleurs changeantes suscitent l'émerveillement des bardes au changement de saison.~
+@104 = ~Edwin se fit grâce à <CHARNAME> un nom qu'il exploita sans vergogne, au point d'impressionner les Sorciers Rouges eux-mêmes, qui en firent leur plus grand dirigeant. Il s'avéra en être digne pendant au moins quelques jours, laps de temps largement suffisant pour qu'il se fasse renverser. Il en va ainsi à Thay, nation où les conquérants font pratiquement la queue pour leur quart d'heure de pouvoir. Sa seule apparition notable depuis cet évènement embarrassant fut lorsqu'il défia Elminster de Valombre lui-même, une courte affaire qui mit un terme définitif à son existence dans les Royaumes. Edwina, par contre, tient une taverne à Eauprofonde. Elle est connue pour son caractère épouvantable et des plus amers.~
+@105 = ~Haer'Dalis découvrit les Royaumes au cours de ses aventures avec <CHARNAME> et tomba sous le charme de cet étrange contrée. Il en visita les moindres recoins et notamment les villes d'Eauprofonde, Padhiver et Thay, d'où il dût toujours partir précipitamment, ne pouvant s'empêcher d'être mêlé aux troubles locaux. Quelques temps plus tard, il se lia d'amitié à une Cambion et retourna dans les Abysses avec elle, où son intervention involontaire le mena à la tête d'une révolte contre certains "grands" des enfers. Il fut longtemps l'être le plus recherché des plans, mais ses ennemis ne purent jamais le capturer. Il échoua dans la ville de Sigil et rejoignit la troupe de Raelis, comme à ses débuts. Il put enfin s'établir durablement à cet endroit... enfin, jusqu'à la prochaine catastrophe, bien sûr.~
+@106 = ~Et qu'en est-il d'Imoen, l'enfant éternelle ? Elle était longtemps restée dans l'ombre de <CHARNAME>, mais était une personne indépendante qui finirait par trouver où son destin la mènerait. Elle retourna tout d'abord à Château-Suif, où l'extraordinaire magicienne trouva de quoi s'occuper en dévorant littéralement la sublime bibliothèque. Toutefois, elle n'y resta qu'un temps, Château-Suif étant plus petit que dans ses souvenirs. Plus tard, elle fut vue en l'illustre compagnie du grand Elminster et de Khelben Bâton-Noir, les encourageant à se décoincer. Son influence grandit avec le temps, et elle aurait même fondé une guilde de voleurs qui opérerait jusqu'à Padhiver. Lorsqu'on lui demande si cette rumeur est fondée, elle affiche un sourire angélique et répond invariablement : "Hé, vous parlez de moi, Imoen..."~
+@107 = ~Les événements dont Jaheira fut le témoin privilégié l'affectèrent profondément. Elle se devait d'être la garante de l'harmonie, mais elle ne sut pas la conserver, et cette pensée la tourmenta de nombreuses années. Elle devint désabusée et acariâtre, se lamentant de longues semaines sur la futilité de la vie et la perte de ses anciens amis. Elle fut reconnue comme championne infatiguable de l'Equilibre, travaillant parfois de concert avec les Ménestrels, et parfois non. Par contre, elle était restée distante et interdite, et ne restait jamais bien longtemps au même endroit. Elle voyagea beaucoup, traversant par trois fois les Royaumes, mais jamais elle ne retourna en Téthyr ou sur la Côte des Epées.~
+@108 = ~La vie de Jan Jansen après son association avec <CHARNAME> fit naître bien des histoires dont le moindre détail était situé entre demi-vérités et vrais mensonges. Si l'on en croit ses mémoires officielles, "Un Jansen dans chaque port", Jan aurait passé quelque temps en prison pour contrebande de navets, avant de retourner à ses premières amours : la contrebande de navets. L'épisode le plus marquant dans lequel il aurait été impliqué reste encore la Grande Révolte de 72, un évènement sombre et chaotique qui semble s'être déroulé autour de la demeure du Voleur de l'Ombre Vaelag. Jan nia avoir planifié la chute du roublard, mais était incapable d'expliquer l'utilité que pouvait avoir la horde de singes armés de couteaux qu'il avait à ses côtés. Néanmoins, la disparition de l'impopulaire et suspecté Vaelag ne pouvait être attribuée au jeune gnome. Etrangement, Jan disposait d'une quantité incroyable d'alibis le couvrant pour chaque seconde de cette funeste journée, et quelle journée cela avait dû être ! Des membres de sa famille venus des quatre coins du pays disaient l'avoir reçu pour prendre un thé et des petits navets. Plus tard, lors de son mariage avec Lissa, on demanda à Jan par quel prodige il fut capable de se trouver en autant d'endroits aussi éloignés de la scène du crime en même temps, ce à quoi il répondit : "Et bien, avec des navets, rien n'est impossible !"~
+@109 = ~Keldorn Firecam pensait mettre un terme à sa longue carrière aventureuse à la fin de la saga de l'enfant de Bhaal. Il se retira donc de l'Ordre et passa des jours paisibles auprès de sa famille, à Athkatla. Mais l'histoire rattrape toujours les héros, et la ville fut assiégée par une armée de géants. Alors âgé de 60 hivers, Keldorn et cinq autres chevaliers mirent au point une stratégie pour retarder d'un jour l'assaut de la ville et ainsi permettre aux renforts amniens d'arriver à leur secours. La bataille qui s'ensuivit fut héroïque, mais sanglante. Les six chevaliers sauvèrent la ville, mais au prix de leur vie. Keldorn mourut donc comme il avait vécu, sur le champ de bataille. De nombreux témoins virent la main de Torm émerger des nuages, et lorsqu'elle repartit, le corps de Keldorn avait disparu. Depuis ce jour, les visions du Vrai Dieu sont toujours accompagnées du spectre de Keldorn à ses côtés.~
+@110 = ~Korgan Rouge-Hache reprit ses bonnes vieilles habitudes après avoir quitté <CHARNAME>. Il prit ainsi le contrôle d'un clan nain, en assassinant son chef et en faisant porter les soupçons sur son second. Il aurait pu profiter sereinement de son immense fortune, mais sa soif de sang et de carnage le poussa jusqu'aux portes de l'Ombre Terre. La folie meurtrière des nains de Korgan prit les elfes noirs de court, mais attaquer les drows sur leur propre territoire est une entreprise fatalement vaine, et les envahisseurs furent balayés au prix de très lourdes pertes. La dernière image qui restera de Korgan est celle d'un nain recouvert de sang, plantant sa hache dans le crâne d'un grand prêtre de Lolth, un rire féroce illuminant son visage. C'est cette image que la légende naine a choisi d'immortaliser, et son raid suicidaire est devenu une "sainte croisade" avec le temps. Il en va ainsi de l'histoire, qui préfère se souvenir de héros plutôt que de fous.~
+@111 = ~Les périls que Mazzy Fentan connut aux côtés de <CHARNAME> ne firent qu'accentuer son goût pour l'aventure. Elle fonda d'ailleurs les Chevaliers de Fentan peu de temps après les événements du Téthyr, un groupe disparate d'aventuriers toujours prompts à faire naître des légendes dans les Royaumes. Ils combattirent ainsi une armée de trolls qui menaçaient une ville, mirent en déroute des orques vindicatifs et défirent même un dragon dans son antre pour "faire un peu de ménage", d'après leurs dires. Leur renommée franchit toutes les frontières et Mazzy fut connue comme l'une des plus valeureuses aventurières de tous les temps. Elle passa ses dernières années en paix avec elle-même, sachant qu'elle pouvait être fière de tout ce qu'elle avait accompli.~
+@112 = ~Minsc poursuivit son chemin après la fin de ses aventures avec l'enfant de Bhaal. Il retourna en Rashéménie, pressé de relater ses exploits aux membres de la Loge des Berserkers. Il n'eut même pas à se donner cette peine, une véritable légende s'étant construite autour de sa personnne dans toutes les tavernes de Féérune. Chaque barde des Royaumes connaissait au moins une chanson traitant des aventures du plus grand rôdeur de tous les temps, et Minsc devint un véritable héros. Il créa alors sa propre compagnie d'aventuriers, le Poing de la Justice, un groupe qui instaura la peur dans les coeurs et les visages des représentants du mal. Cela dura jusqu'à ce que Minsc atteigne un âge avancé, et disparaisse au cours de l'un de ses voyages en-dehors des Royaumes. Et Bouh me direz-vous ? Et bien, que serait Minsc sans Bouh ? Bouh n'a jamais quitté Minsc, et Minsc n'a jamais quitté Bouh, évidemment, et d'aucuns disent qu'ils seraient désormais tous deux parmi les étoiles, là où les hamsters sont géants et les hommes des héros de légende.~
+@113 = ~Nalia développa grandement ses pouvoirs au contact de <CHARNAME>. Elle entreprit alors une vie d'aventures, riche en connaissances et en relations influentes, puis retourna au château des de'Arnise. Elle le trouva aux mains du vil Isaea Roenal, mais n'étant plus la jeune fille effrayée d'autrefois qu'il s'attendait à retrouver, elle le traîna en justice sur le champ pour toutes ses exactions. Elle se déclara héritière du titre de son père et fut un dirigeant reconnu et une archimage respectée, siégeant même au Conseil des Six d'Amn. Elle resta une grande figure de la société amnienne durant de longues années, combattant le mal et protégeant les pauvres. Elle devint l'adversaire le plus redouté de nombre de nobles et même des Mages Cagoulés.~
+@114 = ~Sarevok ne put s'établir nulle part bien longtemps pendant les années qui suivirent sa résurrection par <CHARNAME>. A lui seul, il aurait mis en déroute une armée d'orques à Berdusk, mais sa puissance et sa férocité terrifièrent autant les habitants que les envahisseurs. Il arriva à Port-Ponant en conquérant, renversant tout sur son passage avant de mystérieusement disparaître quelques semaines plus tard. Ses actes furent diversement interprétés, mais tous s'accordèrent à dire que Sarevok était une âme torturée, à la limite de la vie et de la mort, incapable de fixer sa volonté sur l'un de ces deux états. La légende prétend qu'il serait alors parti seul à l'assaut des Abysses, à moins qu'il n'ait décidé de mettre un terme à ses souffrances. En vérité, il se retira à Kara-Tur pour y enterrer Tamoko la guerrière, le seul amour de sa vie et n'en revint jamais... enfin, d'après les légendes.~
+@115 = ~Valygar continua à parcourir les chemins plusieurs années après avoir quitté l'enfant de Bhaal. Il resta longtemps dans les environs d'Eauprofonde mais se retira à Athkatla pour y mener une vie de contemplation dans sa demeure familiale. Il fut pressé de prendre la charge de Prévôt de la ville, une responsabilité qu'il rejeta dans un premier temps. Mais la corruption rampante qui gangrénait la ville eut raison de son inflexibilité, et il accepta le poste. A sa grande surprise, il se révéla être un dirigeant juste et efficace, ce qui lui permit de redorer le blason des Corthala. Il se maria et de son union naquit un fils, qui suivit les traces de son père : il fut nommé quelques années plus tard à la tête des Mages Cagoulés, dont il devint un réformateur très apprécié.~
+@116 = ~Viconia, peu après avoir quitté <CHARNAME>, se retira à Eau-Profonde où elle rejoignit le culte de Shar. Mais la trahison de l'un de ses disciples provoqua la perte de tout son groupe. Shar admonesta vertement Viconia pour cette négligence, mais elle refusa de se repentir, ce qui la décida à repartir sur les routes des Royaumes. Sa puissance était toujours formidable, ce qui lui permit de repousser une attaque des Chevaliers du Bouclier sur Calimport ; elle se joignit également à Drizzt Do'Urden pour porter secours à la cité elfe de Suldanessalar, victime d'un complot du Zhentarim. Les elfes, reconnaissants, l'accueillirent alors et la Reine Ellesime lui accorda les plus grands honneurs de la Seldarine, une récompense jamais octroyée auparavant à un elfe noir. Elle l'accepta sans trahir la moindre émotion et disparut peu après. On reste sans nouvelles d'elle depuis.~
+@1000  = ~Capitaine Ruby~
+@1001  = ~Jasmine~
+@1002  = ~[FEMSAL01] En mer, une femme doit être plus coriace que n'importe quel marin !~ [FEMSAL01]
+@1003  = ~[FEMSAL02] Ahhhh, me r'garde pas comme ça, ou je t'étripe sur place !~ [FEMSL02]
+@1004  = ~[FEMSAL03] Un grog. Un grog et un bon bain. Ouais...~ [FEMSAL03]
+@1005  = ~[FEMSAL06]~ [FEMSAL06]
+@1006  = ~[FEMSAL05]~ [FEMSAL05]
+@1007  = ~[PEASF201] Bien le bonjour.~ [PEASF201]
+@1008  = ~[PEASF202] Belle journée, n'est-ce pas ?~ [PEASF202]
+@1009  = ~[PEASF207]~ [PEASF207]
+@10010  = ~[PEASF208]~ [PEASF208]
+@10011  = ~Wren~
+@10012  = ~[FESTH01] Hé, minou ! Vous voulez voir mon décolleté ?~ [FESTH01]
+@10013  = ~[FESTH03] J'suis une jolie catin, non ?~ [FESTH03]
+@10014  = ~[FESTH05]~ [FESTH05]
+@10015  = ~[FESTH06]~ [FESTH06]
+@10016  = ~Cimeterre du Croc Empoisonné~
+@10017  = ~Le cimeterre, ou "shamshir", comme on l'appelait au début, a une longue lame simple et très incurvée et s'effile sur une longue pointe.~
+@10018  = ~L'on dit que cette arme a été créée au nom de Talona par Revialis le Serpent, et que la dévotion qu'il portait à la Dame des Poisons se reflète dans la lueur rouge qu'elle exhale. On ne sait pas vraiment comment cette arme forgée à Memnon a atterri entre les mains d'un marin demi-orque, mais maintenant qu'elle est en votre posession, il ne fait aucun doute qu'elle jouera un rôle dans les légendes qui sont en train de se construire.
+
+PARAMETRES :
+
+Capacité d'équipement : une attaque supplémentaire par round.
+Capacité de combat : 6 dégâts de poison par round pendant 2 rounds (Jet de Sauvegarde contre le poison pour annuler).
+
+TAC0 : +3
+Dégâts : 1D8 +3
+Type de dégâts : tranchant
+Poids : 3
+Facteur de vitesse : 3
+Type de compétence : cimeterre/wakizashi/ninja-to
+Type : arme à 1 main
+Requiert : 6 en force, 10 en dextérité
+
+Non Utilisable par :
+ Clerc
+ Mage~
+@10019  = ~Lame Ecarlate~
+@10020  = ~Les origines de ce cimeterre d'apparence trompeusement simple se sont perdues dans les méandres de l'histoire ; en effet, l'on ne sait presque rien de cette arme, si ce n'est que les blessures qu'elle occasionne mettent longtemps à cicatriser, et que la victime s'affaiblit et meurt lentement.
+
+PARAMETRES :
+
+Capacité de combat : 2 points de dégâts supplémentaires par round, jusqu'à ce qu'un total de 10 points soit atteint.
+
+TAC0 : +2
+Dégâts : 1D8 +2
+Type de dégâts : tranchant
+Poids : 4
+Facteur de vitesse : 4
+Type de compétence : cimeterre/wakizashi/ninja-to
+Type : arme à 1 main
+Requiert : 10 en force, 10 en dextérité
+
+Non Utilisable par :
+ Clerc
+ Mage~
+@10021  = ~Fléau des Esprits~
+@10022  = ~La plupart des épées magiques ont été forgées il y a des siècles en des contrées éloignées et exotiques. Ce n'est pas le cas du Fléau des Esprits. Ce cimeterre a été créé récemment à Calimport et devait à l'origine être un cadeau destiné à une paladine de Kelemvor pour l'aider dans sa tâche d'éradication des morts-vivants. Pourtant, il ne lui a jamais été offert. L'épée a été volée par un apprenti mécontent et vendue à un marchand peu soupçonneux en échange d'une quantité considérable de lotus noir. La lame s'est ensuite retrouvée au nord du pays, changeant régulièrement de propriétaire ; en effet, à mesure que celle-ci détruisait des morts-vivants, elle semblait en attirer encore plus. Si son propriétaire actuel venait à rencontrer une paladine calimshite ruminant le vol d'une épée et à lui rendre le cimeterre, alors cela pourrait lever la malédiction. Mais les probabilités pour que ces deux choses arrivent sont très minces.
+
+PARAMETRES :
+
+Cette arme est considérée comme étant une arme +3 pour déterminer les créatures qu'elle peut toucher.
+Capacité de combat : 2-12 +4 dégâts contre les morts-vivants qui doivent réussir un Jet de Sauvegarde contre la mort avec une pénalité de -4 où être détruit sur-le-champ.
+
+TAC0 : +1
+Dégâts : 1D8 +2
+Type de dégâts : tranchant
+Poids : 4
+Facteur de vitesse : 3
+Type de compétence : cimeterre/wakizashi/ninja-to
+Type : arme à 1 main
+Requiert : 10 en dextérité
+
+Non Utilisable par :
+ Clerc
+ Mage~
+@10023  = ~Suceuse d'Âmes~
+@10024  = ~La dague traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau doté d'un seul tranchant et un peu plus court.~
+@10025  = ~Cette dague lourde et peu maniable semble aspirer la chaleur et l'énergie-même de l'air qui l'entoure. Vous ne savez pas vraiment où cette arme a été forgée, ni par qui, mais elle a sûrement été créée à noir dessein.
+
+PARAMETRES :
+
+TAC0 : +4
+Dégâts : 1D4 +4
+Effets : 15 % de chance de drainer un niveau
+Type de dégâts : perforant
+Poids : 1
+Facteur de vitesse : 0
+Type de dégâts : dague
+Type : arme à 1 main
+Requiert : 3 en force
+
+Non Utilisable par :
+ Clerc~
+@10026  = ~Outil de l'Assassin~
+@10027  = ~A Port-Crâne, la ville-sous-la-ville qui se trouve non-loin d'Eauprofonde, la vie n'est pas chère, et à vendre de surcroît. Cette dague fuselée d'apparence quelconque a prouvé à de nombreuses reprises son utilité lors des négociations. Son apparence laisse très peu présager des enchantements magiques qui en font l'arme mortelle qu'elle est. Le simple fait de tenir cette arme rend plus discret, et les sortilèges dont elle a été le sujet permettent de poignarder rapidement... et profondément.
+
+PARAMETRES :
+
+Spécial : +20 % en discrétion si équipé
+
+TAC0 : +4 
+Dégâts : 1D4 +5
+Type de dégâts : perforant
+Poids : 1 
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à 1 main
+Requiert : 6 en dextérité
+
+Non Utilisable par :
+ Clerc~
+@10028  = ~Vifargent~
+@10029  = ~Cette dague brillante en argent a été retrouvée dans un ballot de foin, dans un village de pêcheurs au nord de la Côte des Epées. Sa récupération n'était pas aussi glorieuse que celle d'une lame plantée dans un roc, mais c'est tout de même un prix de valeur. Il est difficile de déterminer si c'est le propriétaire de la lame qui bouge plus rapidement que tout le monde ou si tout le monde devient plus lent, mais on est sûr d'au moins une chose : le porteur ne peut être ralenti ou étourdi. En outre, la dague risque de ralentir tous ceux qu'elle touche en combat. 
+
+PARAMETRES :
+
+Capacités : La cible doit réussir un Jet de Sauvegarde contre les baguettes ou être ralentie par 2 pendant 45 secondes. Le propriétaire de la lame est immunisé au ralentissement et à l'étourdissement.
+
+TAC0 : +3 
+Dégâts : 1D4 +3
+Type de dégâts : perforant
+Poids : 1
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à 1 main
+
+Non Utilisable par :
+ Clerc~
+@10030  = ~Baiser d'Adder~
+@10031  = ~Le grotesque pommeau d'ornement de cette dague de jet bien équilibrée suggère sa dangerosité. La lame est claire, mais en apparence seulement. En effet, il en exude du poison qui coule le long de l'acier. Le poison ne peut pas être renouvelé, mais une fois qu'il est épuisé, l'enchantement reste. La dague retourne dans les mains du lanceur une fois utilisée.
+
+PARAMETRES :
+
+Capacité de combat : La cible doit réussir un Jet de Sauvegarde contre le poison ou subir 2 dégâts par seconde pendant 10 secondes.
+
+TAC0 : +2 
+Dégâts : 1D4 +2
+Type de dégâts : perforant
+Portée : 60
+Poids : 1
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à 1 main
+
+Non Utilisable par :
+ Clerc
+ Personnages d'alignements bons~
+@10032  = ~Compagnon des Incroyants~
+@10033  = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rarement, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.~
+@10034  = ~Un homme qui ignore les dieux est un homme bien seul, d'autant plus lorsqu'il a besoin d'une faveur divine sous la forme de soins magiques. C'est avec cette pensée à l'esprit que Tarvo l'Incroyant, un célèbre voleur de Padhiver, a commandé cet anneau d'un prêtre de Tyr patient et d'une tolérance remarquable. Les enchantements lancés sur l'anneau devaient permettre à Tarvo d'éviter d'aller au temple lorsque sa profession mettait sa vie en danger. Malheureusement, rien n'aurait pu aider le malchanceux Tarvo, car aucun sort connu ne peut recoller une tête à son corps une fois qu'ils ont été séparés par un garrot.
+
+PARAMETRES :
+
+Le porteur est immunisé au poison.
+Guérison une fois par jour
+Dextérité : +1
+Classe d'armure : +1
+Jets de Sauvegarde : +3~
+@10035  = ~Amulette de Liberté~
+@10036  = ~Les amulettes sont généralement des objets magiques suspendus autour du cou par une chaîne. Le type de chaîne accompagnant l'amulette augmente souvent la valeur esthétique de l'objet, mais pas ses propriétés magiques. On ne peut porter qu'une seule amulette autour du cou.~
+@10037  = ~Amulette de Liberté : 'L'Evasion de Basile'
+
+Le nom de Basile Vivebranche vivra pendant longtemps dans sa terre natale du Téthyr, non pas à cause des exploits héroïques qu'il a accomplis durant sa vie, ni des généreux dons qu'il a faits à diverses institutions caritatives, mais parce que les descendants de chacun de ses 182 enfants essayent toujours de retrouver le trésor qui lui a permis de vivre une vie de patachon, séduisant aussi bien les jeunes filles des villages que les jeunes nobles naïves dans sa quête du grand amour. L'un des objets qui ont été retrouvés dans l'une de ses cachettes secrètes est cette amulette de Liberté. Si elle n'aurait pu prévenir la naissance de son innombrable progéniture, elle a indubitablement dû se révéler être des plus utiles pour s'échapper de potentielles immobilisations une fois que la condition des jeunes femmes fut révélée. Outre un léger bonus de charisme, l'amulette permet à son propriétaire d'ignorer toute tentative d'entraver ses mouvements et offre une légère protection sous la forme d'un bonus aux jets de sauvegarde. Certaines personnes ont une veine de pendu.
+
+PARAMETRES :
+
+Spécial : Le porteur est immunisé à tout ce qui pourrait affecter sa mobilité, que ce soit d'origine magique ou non. Ceci inclut les sorts de hâte et de lenteur.
+Charisme : +1
+Jets de Sauvegarde : +1
+
+Non Utilisable par :
+ Tueur de magiciens~
+@10038  = ~Ceinturon de Contrôle Létal~
+@10039  = ~Les ceinturons ressemblent généralement aux ceintures. Mais à la différence de ces dernières, ils ne servent pas à retenir les pantalons ou les salopettes, mais à porter bourses, fourreaux et choses de ce genre.~
+@10040  = ~Ceinturon de Contrôle Létal : 'L'Intouchable'
+
+Le créateur de ce ceinturon magique, une personne très prudente ou tout simplement paranoïaque, l'a enchanté pour protéger son porteur de toute forme de dégâts physiques. Mais tout ce que l'on sait de cet objet se résume à ses capacités magiques. Son dernier propriétaire semblerait l'avoir gagné aux dés.
+
+PARAMETRES :
+
+Classe d'armure : +3 
+Poids : 2
+
+Non Utilisable par :
+ Tueur de magiciens~
+@10041  = ~Cape d'Isolation +2~
+@10042  = ~La cape peut être fabriquée dans presque n'importe quel type de tissu et prendre n'importe quelle forme. Les capes les plus courantes sont faites d'un morceau de tissu circulaire troué en son centre pour passer la tête et d'un tissu drapé à partir du cou, attaché par une chaîne, une broche, une ficelle ou des épingles.~
+@10043  = ~Cape d'Isolation +2 : 'Etreinte de Firian'
+
+Firian Killeraheal fit don de cette cape à sa bien-aimée Amanis pour leur voyage vers Suldanessalar dans le but de la protéger de tous les dangers qu'elle pourrait courir. Elle arriva saine et sauve, mais il périt au cours d'une attaque de pirates dans la Mer des Etoiles Déchues. Dévastée, Amanis partit pour Arvandor, laissant derrière cette cape en mémoire de l'homme qu'elle a aimé.
+
+PARAMETRES :
+
+Résistance à l'Acide : +10 %
+Résistance au Froid : +10 %
+Résistance à l'Electricité : +10 %
+Résistance au Feu : +10 %
+Classe d'armure : +2
+Jets de Sauvegarde : +2
+Poids : 3
+
+La nature magique de cet objet fait qu'il ne peut pas être équipé avec un anneau ou une amulette de protection, ni une armure enchantée.~
+@10044  = ~Armure de Cuir de Discrétion +3~
+@10045  = ~Ce plastron de cuir est souple et léger, et de surcroît très agréable à porter.
+
+PARAMETRES :
+
+Classe d'armure : 8
+Poids : 15
+Sorts : +10 % d'échec lors du lancement d'un sort profane
+Requiert : 3 en force
+
+Non Utilisable par :
+ Mage
+ Kensai
+ Moine
+ Métamorphe~
+@10046  = ~Armure de Cuir de Discrétion +3 : 'Ecrin de Griegg'
+
+Une douzaine d'années durant, le Capitaine Griegg Olaf fit respecter sa loi dans la Mer des Epées entre Luskan et les Dix-Cités. Il attribuait ses victoire à son armure de cuir légère, mais néanmoins robuste. En vérité, sa souveraineté a persisté parce que personne ne voulait se battre avec lui pour une route commerciale aussi peu fréquentée. Ce qui est certain, c'est que les propriétés de l'amure à se fondre dans les ombres lui ont été très utiles pour s'enfuir lorsque ses vantardises dans une auberge Luskanienne ont attiré l'attention de la Confrérie des Arcanes. Après cet épisode, Griegg vendit son armure, s'installa a Eauprofonde et ouvrit une fromagerie.
+
+PARAMETRES :
+
+Discrétion : +30 %
+Résistance au Feu : +10 %
+Classe d'armure : 5
+Poids : 4
+Requiert : 3 en force
+
+Non Utilisable par :
+ Mage
+ Kensai
+ Moine
+ Métamorphe~
+@10047  = ~Narfell, l'Empire Fantôme~
+@10048  = ~Narfell, l'Empire Fantôme
+
+Il y a bien longtemps, Narfell était un empire prometteur dirigé par Nentyarch de Tharos, qui sut conquérir et unir sous sa bannière les royaumes limitrophes entre -970 DR et -946 DR. A son apogée, l'empire Nar s'étendait par-delà ses frontières actuelles formées par le lac Ashane à l'est jusqu'aux Pics Géants à l'ouest, dont une grande partie de Thesk, le Grand Val et certaines régions de Thay. Si l'empereur détenait l'autorité officielle, c'étaient les prêtres qui possédaient vraiment le pouvoir de l'Empire Nar, notamment grâce à leurs rituels sanguinaires invoquant des armées de démons pour aider les forces de l'empire. Il se peut que leur pouvoir fut sous-utilisé, ou alors leur arrogance fut-elle par trop exagérée, car durant l'année des Ailes Attachées (-623 DR), les invasions simultanées en Unther et en Mulhorande furent des échecs retentissants. Cette tentative ratée d'étendre les frontières de l'empire l'affaiblit substantiellement, ce qui en fît une cible de choix pour l'empire Raumathari. Durant l'année du Géant de Pierre (-160 DR), les deux royaumes se trouvèrent coincés dans une guerre qui dura des décénnies et décima leurs populations respectives. Les segneurs démons invoqués par le Narfell ne suffirent pas à le sauver : les deux empires s'entretuèrent, et leurs habitants avec.
+
+Les rares survivants se sont probablement jurés de reconstruire l'empire, mais cela ne se produisit jamais. Il y avait eu trop de pertes pour pouvoir tout reconstruire. De nos jours, les descendants des peuples Nar consistent en des tribus barbares dont la préoccupation la plus urgente est de survivre aux prochaines gelées hivernales. La glorieuse histoire du Narfell en est réduite à quelques bouts de légende, et ses villes majestueuses ne sont plus que des ruines hantées éparpillées sur cette contrée froide et stérile.~
+@10049  = ~La Grande Faille, Terre Natale des Nains d'Or~
+@10050  = ~La Grande Faille, Terre Natale des Nains d'Or
+
+Il est communément admis que la Grande Faille fait partie du Sud Etincelant, même s'il serait plus juste de donner la dénomination de Grande Faille à la région, et d'appeler la nation qu'elle abrite le Royaume des Profondeurs. Le Royaume des Profondeurs est une monarchie autonome dont la capitale est située dans la ville de Basseloge. La plupart de ses habitants consiste en des nains d'or, une sous-race de nains à la peau assombrie, aux cheveux blonds ou dorés et dont les yeux ont la couleur de l'ambre. Les nains d'or tendent à être plus conservateurs que leurs cousins, les nains d'écu, et entretiennent peu de relations avec les étrangers, même ceux qui peuplent la surface de leur contrée. Il existe un million d'âmes dans la Grande Faille qui n'habitent pas le Royaumes des Profondeurs, et qui consistent pour la plupart en des nains d'écu, des gnomes et quelques humains dans la ville de Khôltar.~
+@10051  = ~Petit Livre d'Enigmes~
+@10052  = ~Petit Livre d'Enigmes
+
+L'on me cherche rarement, mais on me trouve toujours,
+Tout le monde est logé à la même enseigne avec moi,
+Je suis la compagne de route de chaque aventurier, mais tous veulent me fausser compagnie,
+L'on peut me tromper, mais jamais m'éviter,
+L'on dit que je suis terrible, mais je ne suis pas toujours crainte,
+Et au final, c'est moi qui vous trouverai.
+Que suis-je ?
+
+
+Nos pieds se touchent, mais pas nos têtes,
+Je suis très mobile, je vous desservirai dans les endroits sombres,
+Contrairement à la vôtre, ma taille est flexible,
+Ma forme ressemble à la vôtre, mais je vous ressemble si peu.
+Que suis-je ?
+
+
+Les sages me partagent de bon coeur, les fous me gaspillent,
+L'on me fixe souvent un prix, mais l'argent ne saurait m'acheter,
+L'on ne réalise souvent ma valeur que lorsque je disparais,
+Je suis invisible et intangible, mais aucune créature ne pourrait exister sans moi,
+Une personne peut en prendre beaucoup, mais n'en aura jamais qu'une seule.
+Que suis-je ?
+
+
+Les vieillards se vantent de me posséder, mais je ne suis la propriété exclusive de personne,
+Moins on me possède, plus on peut m'avoir, mais mon cadeau n'est pas toujours le bienvenu,
+Je suis possédée par ceux qui ont le moins besoin de moi,
+Je suis souvent clamée, mais pas toujours comprise,
+Seule, je peux exister, mais je ne gagne ma valeur que lorsque je suis partagée,
+Ceux qui ont le plus besoin de moi ne m'apprécient pas vraiment.
+Que suis-je ?
+
+
+Je peux remplir un récipient, mais alors il ne contiendra rien,
+L'on me créé uniquement en déplaçant quelque chose,
+Lorsque le vent souffle sur moi, je peux produire un son agréable,
+L'on peut me faire large et profond, je n'ai pourtant aucune substance.
+Que suis-je ?
+
+
+Nous sommes eau et sel, mais nous ne sommes point la mer,
+Nous naissons de la joie ou de la douleur,
+Nous sommes souvent retenues, mais nous libérer apporte souvent du soulagement.
+Que sommes-nous ?
+
+
+Je suis libre comme l'air, mais l'on peut m'avoir,
+Je suis souvent invoquée, mais je ne suis pas la bienvenue,
+Contenue, je suis haïe de mon porteur, libérée, je suis haïe du sujet de mon existence,
+Je suis née de l'amour, mais je suis le poison de ce qui m'a créée.
+Que suis-je ?
+
+
+Je suis né dans un champ où je suis devenu grand et élancé,
+J'ai d'abord été fauché, puis battu jusqu'à être broyé,
+J'ai été écrasé entre deux pierres, puis réduit à presque rien,
+J'ai été plongé dans l'eau, puis battu à coups de poings,
+J'ai été laissé seul un moment, puis jeté au feu alors que je commençais à me lever,
+J'ai été découpé en morceaux et dévoré lorsque j'en suis finalement ressorti.
+Que suis-je ?
+
+
+On donne sa langue au chat ?
+
+La mort, votre ombre, la vie, la sagesse, un trou, les larmes, la jalousie, un grain de blé.~
+@10053  = ~Recueil de Limericks de Tante Lu~ /*un limerick est un terme d'origine irlandaise qui désigne un poème comique et/ou absurde en 5 vers dont les rimes prennent la structure a a b b a -- et qui ont été une vraie plaie à traduire !!!*/
+@10054  = ~Recueil de Limericks de Tante Lu
+
+Un château à douves emplies d'eau,
+Où une dame écrit à son beau.
+Vers elle peut-il bien accourir,
+Aussi sec devra-t-il repartir
+S'il oublie son bateau.
+
+
+Il était un homme de grand bien,
+Ne pensait jamais à ses propres besoins,
+Et lorsque son tour arriva,
+Son cheval trébucha, s'éclopa,
+Et l'abandonna sur la route des pins.
+
+
+Il était une jeune et belle fillette
+Aux longs cheveux dorés de blondinette,
+Qui soignait sa tignasse abondante
+Jusqu'à la rendre éblouissante,
+Puis la rasa sur un coup de tête.
+
+
+Une gnome qui du Lantan venait,
+Et dont le mari avec ferveur voyageait.
+S'alanguissant de son époux,
+Elle prit ses jambes à son cou,
+Et s'en alla sans regrets.
+
+
+Il était un gars fort fort excité
+Qui n'aimait rien tant qu'embrouiller,
+Faire tourner la tête des jeunettes
+Pour se glisser dans leurs couchettes,
+Puis s'enfuir le coeur léger.
+
+
+Cette fille n'a dans la tête que du vent,
+Elle vit dans une maison de verre transparent,
+On voit tout, même à travers ses draps,
+Elle ne cache rien, mais ne le sait pas,
+Provoquant l'hilarité des passants.~
+@10055  = ~Chapeau de cuir~
+@10056  = ~Chapeau de cuir :
+
+Les chapeaux protègent du soleil, de la pluie et du froid. Celui-là est fait en cuir. Ses bords sont retournés sur trois côtés jusqu'au sommet du chapeau, ce qui lui donne une forme triangulaire.~
+@10057  = ~Ceinture écarlate~
+@10058  = ~Ceinture écarlate :
+
+La plupart des ceinturons servent à retenir les pantalons ou à ranger une arme, mais cette longue bande de soie rouge semble être plus ornementale que fonctionnelle.~
+@10059  = ~Marchandises secrètes de Jasmine~
+@10060  = ~Homeward Bound ne met *pas* fin aux romances de BioWare~
+@10061  = ~La separation met fin aux romances~
+@10062  = ~Les parametres du jeu original restent inchanges~
+@100000 = ~Ce mod requiert Throne of Bhaal.~
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

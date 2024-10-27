@@ -1,0 +1,373 @@
+BACKUP ~homewardbound/backup~
+AUTHOR ~berelinde - berelinde@gmail.com~
+
+README ~homewardbound/readme-homewardbound.txt~ 
+VERSION ~v8 - 01 August, 2019~ 
+
+ALWAYS
+	ACTION_DEFINE_ARRAY b_reload BEGIN
+	"setup-homewardbound.tra"
+	END
+	ACTION_DEFINE_ARRAY b_noconvert BEGIN END
+		LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/Translations~
+		noconvert_array = b_noconvert
+		reload_array = b_reload
+	END
+END
+
+AUTO_TRA ~homewardbound/Translations/%s~
+
+LANGUAGE ~English~ ~english~ ~homewardbound/Translations/english/setup-homewardbound.tra~
+LANGUAGE ~Francais~ ~french~ ~homewardbound/Translations/french/setup-homewardbound.tra~
+
+BEGIN @0
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~fatesp.dlg~ @100000 
+
+APPEND ~STATE.IDS~
+  ~0x80101FEF CD_STATE_NOTVALID~
+  UNLESS ~CD_STATE_NOTVALID~
+
+/* dialogue compilation */  
+COMPILE ~homewardbound/dialogue/b!fatesp.d~
+COMPILE ~homewardbound/dialogue/b!finsol01.d~
+COMPILE ~homewardbound/dialogue/b!25p.d~
+COMPILE ~homewardbound/dialogue/dialogue.d~ 
+
+
+/* script */
+
+INCLUDE ~homewardbound/script/GW_BGEE.tpa~
+COMPILE ~homewardbound/script/b!jasmin.baf~ 
+COMPILE ~homewardbound/script/b!ruby.baf~ 
+COMPILE ~homewardbound/script/b!wren.baf~ 
+EXTEND_TOP    ~ar1600.bcs~ ~homewardbound/script/b!ar1600.baf~ 
+EXTEND_BOTTOM ~ar1600.bcs~ ~homewardbound/script/b!ar1600_eb.baf~ 
+EXTEND_BOTTOM ~ar2100.bcs~ ~homewardbound/script/b!ar2100.baf~ 
+
+COPY_EXISTING ~finsol01.cre~ ~override~
+  WRITE_ASCII 0x248 ~finsol01~ #8
+  BUT_ONLY_IF_IT_CHANGES
+EXTEND_TOP ~finsol01.bcs~ ~homewardbound/script/b!finsol01.baf~
+
+/* epilogues */
+COPY ~homewardbound/mos/b!hbaer.mos~ ~override~
+COPY ~homewardbound/mos/b!hbano.mos~ ~override~
+COPY ~homewardbound/mos/b!hbcer.mos~ ~override~
+COPY ~homewardbound/mos/b!hbedw.mos~ ~override~
+COPY ~homewardbound/mos/b!hbhae.mos~ ~override~
+COPY ~homewardbound/mos/b!hbimo.mos~ ~override~
+COPY ~homewardbound/mos/b!hbjah.mos~ ~override~
+COPY ~homewardbound/mos/b!hbjan.mos~ ~override~
+COPY ~homewardbound/mos/b!hbkel.mos~ ~override~
+COPY ~homewardbound/mos/b!hbkor.mos~ ~override~
+COPY ~homewardbound/mos/b!hbmaz.mos~ ~override~
+COPY ~homewardbound/mos/b!hbmin.mos~ ~override~
+COPY ~homewardbound/mos/b!hbnal.mos~ ~override~
+COPY ~homewardbound/mos/b!hbsar.mos~ ~override~
+COPY ~homewardbound/mos/b!hbval.mos~ ~override~
+COPY ~homewardbound/mos/b!hbvic.mos~ ~override~
+COPY ~homewardbound/2da/b!hbaer.2da~
+     ~override/b!hbaer.2da~
+    REPLACE ~9101~ @101
+COPY ~homewardbound/2da/b!hbano.2da~
+     ~override/b!hbano.2da~
+    REPLACE ~9102~ @102
+COPY ~homewardbound/2da/b!hbcer.2da~
+     ~override/b!hbcer.2da~
+    REPLACE ~9103~ @103
+COPY ~homewardbound/2da/b!hbedw.2da~
+     ~override/b!hbedw.2da~
+    REPLACE ~9104~ @104
+COPY ~homewardbound/2da/b!hbhae.2da~
+     ~override/b!hbhae.2da~
+    REPLACE ~9105~ @105
+COPY ~homewardbound/2da/b!hbimo.2da~
+     ~override/b!hbimo.2da~
+    REPLACE ~9106~ @106
+COPY ~homewardbound/2da/b!hbjah.2da~
+     ~override/b!hbjah.2da~
+    REPLACE ~9107~ @107
+COPY ~homewardbound/2da/b!hbjan.2da~
+     ~override/b!hbjan.2da~
+    REPLACE ~9108~ @108
+COPY ~homewardbound/2da/b!hbkel.2da~
+     ~override/b!hbkel.2da~
+    REPLACE ~9109~ @109
+COPY ~homewardbound/2da/b!hbkor.2da~
+     ~override/b!hbkor.2da~
+    REPLACE ~9110~ @110
+COPY ~homewardbound/2da/b!hbmaz.2da~
+     ~override/b!hbmaz.2da~
+    REPLACE ~9111~ @111
+COPY ~homewardbound/2da/b!hbmin.2da~
+     ~override/b!hbmin.2da~
+    REPLACE ~9112~ @112
+COPY ~homewardbound/2da/b!hbnal.2da~
+     ~override/b!hbnal.2da~
+    REPLACE ~9113~ @113
+COPY ~homewardbound/2da/b!hbsar.2da~
+     ~override/b!hbsar.2da~
+    REPLACE ~9114~ @114
+COPY ~homewardbound/2da/b!hbval.2da~
+     ~override/b!hbval.2da~
+    REPLACE ~9115~ @115
+COPY ~homewardbound/2da/b!hbvic.2da~
+     ~override/b!hbvic.2da~
+    REPLACE ~9116~ @116
+
+/* audio */
+ACTION_IF ("%WEIDU_ARCH%" STRING_COMPARE_CASE "x86" = 0) THEN BEGIN // if Windows
+
+  AT_NOW                   ~homewardbound/homewardbound-audioinstall.bat~   // install...
+  AT_INTERACTIVE_UNINSTALL ~homewardbound/homewardbound-audiouninstall.bat~ // ... and uninstall
+
+END ELSE BEGIN // linux or OS X
+
+  AT_NOW                   ~sh homewardbound/homewardbound-audio-install.sh~   // install...
+  AT_INTERACTIVE_UNINSTALL ~sh homewardbound/homewardbound-audio-uninstall.sh~ // ... and uninstall
+
+END
+
+/* Creatures */ 
+
+COPY ~homewardbound/creatures/b!jasmis.bmp~ ~override~ 
+COPY ~homewardbound/creatures/b!jasmin.cre~ ~override~ 
+    SAY NAME1 @1001  
+    SAY NAME2 @1001  
+    WRITE_ASCII 0x248 ~b!jasmin~   #8  //override = b!jasmin 
+    WRITE_ASCII 0x280 ~b!jasmine~  #32 //DV = b!jasmine  
+    WRITE_ASCII 0x2cc ~b!jasmin~   #8  //dialogue = b!jasmin 
+    WRITE_ASCII 0x34  ~b!jasmis~   #8  //portrait = b!jasmis
+    SAY INITIAL_MEETING   @1002  
+    SAY SELECT_COMMON1    @1003  
+    SAY SELECT_COMMON2    @1002  
+    SAY SELECT_COMMON3    @1004  
+    SAY DIALOGUE_HOSTILE  @1003  
+    SAY DAMAGE            @1005  
+    SAY HURT              @1005  
+    SAY DYING             @1006  
+    ADD_CRE_ITEM ~leat09~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~ 
+    ADD_CRE_ITEM ~sw1h52~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP 
+
+COPY ~homewardbound/creatures/b!rubys.bmp~ ~override~   
+COPY ~homewardbound/creatures/b!ruby.cre~ ~override~ 
+    SAY NAME1 @1000  
+    SAY NAME2 @1000  
+    WRITE_ASCII 0x248 ~b!ruby~   #8   //override = b!ruby 
+    WRITE_ASCII 0x280 ~b!ruby~   #32  //DV = b!ruby 
+    WRITE_ASCII 0x2cc ~b!ruby~   #8   //dialogue = b!ruby  
+    WRITE_ASCII 0x34  ~b!rubys~   #8  //portrait = b!rubys
+    SAY INITIAL_MEETING   @1007  
+    SAY SELECT_COMMON1    @1007  
+    SAY DIALOGUE_HOSTILE  @1008  
+    SAY DAMAGE            @1009  
+    SAY HURT              @1009  
+    SAY DYING             @10010  
+    ADD_CRE_ITEM ~leat08~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~ 
+    ADD_CRE_ITEM ~sw1h10~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP 
+    
+COPY ~homewardbound/creatures/b!wrens.bmp~ ~override~ 
+COPY ~homewardbound/creatures/b!wren.cre~ ~override~ 
+    SAY NAME1 @10011  
+    SAY NAME2 @10011  
+    WRITE_ASCII 0x248 ~b!wren~   #8   //override = b!ruby 
+    WRITE_ASCII 0x280 ~b!wren~   #32  //DV = b!ruby 
+    WRITE_ASCII 0x2cc ~b!wren~   #8   //dialogue = b!ruby  
+    WRITE_ASCII 0x34  ~b!wrens~   #8  //portrait = b!wrens
+    SAY INITIAL_MEETING   @10012  
+    SAY SELECT_COMMON1    @10012  
+    SAY SELECT_COMMON2    @10013  
+    SAY DAMAGE            @10014  
+    SAY HURT              @10014  
+    SAY DYING             @10015  
+    ADD_CRE_ITEM ~leat02~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~ 
+    ADD_CRE_ITEM ~sw1h08~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP 
+    
+/* Items */ 
+
+COPY ~homewardbound/items/ib!scm1.bam~ ~override~ 
+COPY ~homewardbound/items/b!scim1.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!scm1~ #8  //inventory icon 
+    SAY NAME1 @10016  
+    SAY NAME2 @10016 
+    SAY UNIDENTIFIED_DESC @10017
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10018" END
+
+ 
+COPY ~homewardbound/items/ib!scm2.bam~ ~override~ 
+COPY ~homewardbound/items/b!scim2.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!scm2~ #8  //inventory icon 
+    SAY NAME1 @10019  
+    SAY NAME2 @10019 
+    SAY UNIDENTIFIED_DESC @10017
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10020" END
+ 
+COPY ~homewardbound/items/b!scim33.eff~ ~override~  
+COPY ~homewardbound/items/ib!scm3.bam~  ~override~ 
+COPY ~homewardbound/items/b!scim3.itm~  ~override~ 
+    WRITE_ASCII 0x3a ~ib!scm3~ #8  //inventory icon 
+    SAY NAME1 @10021  
+    SAY NAME2 @10021 
+    SAY UNIDENTIFIED_DESC @10017
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10022" END
+ 
+
+COPY ~homewardbound/items/ib!dag1.bam~ ~override~ 
+COPY ~homewardbound/items/b!dag1.itm~ ~override~ 
+    SAY NAME1 @10023  
+    SAY NAME2 @10023 
+    SAY UNIDENTIFIED_DESC @10024
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10025" END
+ 
+COPY ~homewardbound/items/ib!dag2.bam~ ~override~ 
+COPY ~homewardbound/items/b!dag2.itm~ ~override~ 
+    SAY NAME1 @10026  
+    SAY NAME2 @10026 
+    SAY UNIDENTIFIED_DESC @10024
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10027" END
+    
+COPY ~homewardbound/items/ib!dag3.bam~ ~override~ 
+COPY ~homewardbound/items/b!dag3.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!dag3~ #8  //inventory icon 
+    SAY NAME1 @10028  
+    SAY NAME2 @10028 
+    SAY UNIDENTIFIED_DESC @10024
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10029" END
+    
+COPY ~homewardbound/items/ib!dag4.bam~ ~override~ 
+COPY ~homewardbound/items/b!dag4.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!dag4~ #8  //inventory icon 
+    SAY NAME1 @10030  
+    SAY NAME2 @10030 
+    SAY UNIDENTIFIED_DESC @10024
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10031" END
+
+COPY ~homewardbound/items/ib!jrng.bam~ ~override~ 
+COPY ~homewardbound/items/b!jasrng.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jrng~ #8  //inventory icon 
+    SAY NAME1 @10032  
+    SAY NAME2 @10032 
+    SAY UNIDENTIFIED_DESC @10033
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10034" END
+
+COPY ~homewardbound/items/ib!jamu.bam~ ~override~ 
+COPY ~homewardbound/items/b!jasamu.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jamu~ #8  //inventory icon 
+    SAY NAME1 @10035  
+    SAY NAME2 @10035 
+    SAY UNIDENTIFIED_DESC @10036
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10037" END
+ 
+COPY ~homewardbound/items/ib!jblt.bam~ ~override~ 
+COPY ~homewardbound/items/b!jasblt.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jblt~ #8  //inventory icon 
+    SAY NAME1 @10038  
+    SAY NAME2 @10038 
+    SAY UNIDENTIFIED_DESC @10039
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10040" END
+ 
+COPY ~homewardbound/items/ib!jclk.bam~ ~override~ 
+COPY ~homewardbound/items/b!jasclk.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jclk~ #8  //inventory icon 
+    SAY NAME1 @10041  
+    SAY NAME2 @10041 
+    SAY UNIDENTIFIED_DESC @10042
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10043" END
+ 
+COPY ~homewardbound/items/ib!jlet.bam~ ~override~ 
+COPY ~homewardbound/items/b!jaslet.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jlet~ #8  //inventory icon 
+    SAY NAME1 @10044  
+    SAY NAME2 @10044 
+    SAY UNIDENTIFIED_DESC @10045 
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10046" END
+             
+COPY ~homewardbound/items/ib!jbk1.bam~ ~override~ 
+COPY ~homewardbound/items/b!jbook1.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jbk1~ #8  //inventory icon - tan book
+    SAY NAME1 @10047  
+    SAY NAME2 @10047 
+    SAY UNIDENTIFIED_DESC @10048
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10048" END
+
+COPY ~homewardbound/items/ib!jbk2.bam~ ~override~ 
+COPY ~homewardbound/items/b!jbook2.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jbk2~ #8  //inventory icon - green book 
+    SAY NAME1 @10049  
+    SAY NAME2 @10049 
+    SAY UNIDENTIFIED_DESC @10050
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10050" END
+
+COPY ~homewardbound/items/ib!jbk3.bam~ ~override~ 
+COPY ~homewardbound/items/b!jbook3.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jbk3~ #8  //inventory icon - red book 
+    SAY NAME1 @10051  
+    SAY NAME2 @10051 
+    SAY UNIDENTIFIED_DESC @10052
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10052" END
+
+COPY ~homewardbound/items/ib!jbk4.bam~ ~override~ 
+COPY ~homewardbound/items/b!jbook4.itm~ ~override~ 
+    WRITE_ASCII 0x3a ~ib!jbk4~ #8  //inventory icon - yellow book 
+    SAY NAME1 @10053  
+    SAY NAME2 @10053 
+    SAY UNIDENTIFIED_DESC @10054 
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10054" END
+
+COPY ~homewardbound/items/ib!phat.bam~ ~override~ 
+COPY ~homewardbound/items/b!pirhat.itm~ ~override~  
+    WRITE_ASCII 0x3a ~ib!phat~ #8  //inventory icon  
+    SAY NAME1 @10055  
+    SAY NAME2 @10055 
+    SAY UNIDENTIFIED_DESC @10056 
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10056" END
+    
+COPY ~homewardbound/items/b!pblt1.eff~ ~override~     
+COPY ~homewardbound/items/ib!pblt.bam~ ~override~ 
+COPY ~homewardbound/items/b!pirblt.itm~ ~override~  
+    WRITE_ASCII 0x3a ~ib!pblt~ #8  //inventory icon 
+    SAY NAME1 @10057  
+    SAY NAME2 @10057 
+    SAY UNIDENTIFIED_DESC @10058 
+    LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@10058" END
+    
+/* Store */ 
+
+COPY ~homewardbound/items/b!jasmin.sto~ ~override~ 
+  SAY NAME2 @10059 
+  ADD_STORE_ITEM ~b!dag1~   #0 #0  #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!dag2~   #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!dag3~   #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!dag4~   #50 #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jasamu~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jasblt~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jasclk~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jaslet~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jasrng~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!pirblt~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!pirhat~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!scim1~  #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!scim2~  #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!scim3~  #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jbook1~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jbook2~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jbook3~ #0  #0 #0  ~IDENTIFIED~ #1 
+  ADD_STORE_ITEM ~b!jbook4~ #0  #0 #0  ~IDENTIFIED~ #1 
+         
+    
+/* Romance Kills */     
+
+BEGIN @10060 
+SUBCOMPONENT @10061 
+    EXTEND_TOP ~aerie.bcs~   ~homewardbound/script/b!aerie.baf~ 
+    EXTEND_TOP ~anomen.bcs~  ~homewardbound/script/b!anomen.baf~ 
+    EXTEND_TOP ~jaheira.bcs~ ~homewardbound/script/b!jaheira.baf~ 
+    EXTEND_TOP ~viconia.bcs~ ~homewardbound/script/b!viconia.baf~ 
+
+BEGIN @10062 
+SUBCOMPONENT @10061 
+    COPY ~homewardbound/items/b!romkil.x~ ~override~ 

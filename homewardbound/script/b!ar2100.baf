@@ -1,0 +1,179 @@
+
+// b!ar2100.baf - EXTEND_BOTTOM of ar2100.bcs - gets NPCs off to the mainland 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBAerieSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0607","Aerie",[272.294])  //Aerie goes to the Circus Tent 
+        SetGlobal("B!HBAerieSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBAnomenSail","GLOBAL",1) 
+    Alignment("Anomen",MASK_LAWFUL) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0903","Anomen",[1572.366])  //Anomen goes to the Order of the Radiant Heart  
+        SetGlobal("B!HBAnomenSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBAnomenSail","GLOBAL",1) 
+    Alignment("Anomen",CHAOTIC_NEUTRAL) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0901","Anomen",[588.627])  //Anomen goes to the Temple of Helm  
+        SetGlobal("B!HBAnomenSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBCerndSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR1901","Cernd",[548.655])    //Cernd goes to the Druid Grove, in the cave area 
+        SetGlobal("B!HBCerndSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBEdwinSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0406","Edwin",[673.1104])    //Edwin goes to the Copper Coronet 
+        SetGlobal("B!HBEdwinSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBHaerDalisSail","GLOBAL",1) 
+    Global("Playhouse","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0523","HaerDalis",[826.616])     //Haer'Dalis goes to the Playhouse 
+        SetGlobal("B!HBHaerDalisSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBHaerDalisSail","GLOBAL",1) 
+    !Global("Playhouse","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0510","HaerDalis",[826.616])     //Haer'Dalis goes to the Playhouse 
+        SetGlobal("B!HBHaerDalisSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBImoen2Sail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0406","Imoen2",[1457.1901])    //Imoen goes to the Copper Coronet 
+        SetGlobal("B!HBImoen2Sail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBJaheiraSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0300","Jaheira",[1257.3007])    //Jaheira goes to stand outside the Harper building
+        SetGlobal("B!HBJaheiraSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBJanSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0402","Jan",[226.292])     //Jan goes to the Jansen family hovel 
+        SetGlobal("B!HBJanSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBKeldornSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0903","Keldorn",[1724.501])    //Keldorn goes to the Order of the Radiant Heart  
+        SetGlobal("B!HBKeldornSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBKorganSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0406","Korgan",[941.1837])    //Korgan goes to the Copper Coronet 
+        SetGlobal("B!HBKorganSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBMazzySail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR2002","Mazzy",[424.335])    //Mazzy goes to the Fentan home in Trademeet 
+        SetGlobal("B!HBMazzySail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBMinscSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0406","Minsc",[1145.1404])    //Minsc goes to the Copper Coronet 
+        SetGlobal("B!HBMinscSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBNaliaSail","GLOBAL",1) 
+    Global("PCKeepOwner","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR1306","Nalia",[1064.901])    //Nalia goes to the Keep 
+        SetGlobal("B!HBNaliaSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBNaliaSail","GLOBAL",1) 
+    !Global("PCKeepOwner","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0406","Nalia",[658.1462])    //Nalia goes to the CopperCoronet  
+        SetGlobal("B!HBNaliaSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBValygarSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR1101","Valygar",[402.338])    //Valygar goes to his cabin in the Umar Hills 
+        SetGlobal("B!HBValygarSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBViconiaSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0800","Viconia",[498.1089])    //Viconia goes to the Graveyard 
+        SetGlobal("B!HBViconiaSail","GLOBAL",2) 
+END 
+
+IF 
+    InMyArea(Player1) 
+    Global("B!HBYoshimoSail","GLOBAL",1) 
+THEN 
+    RESPONSE #100 
+        MoveGlobal("AR0406","Yoshimo",[1368.1922])    //Yoshimo goes to the Copper Coronet 
+        SetGlobal("B!HBYoshimoSail","GLOBAL",2) 
+END 

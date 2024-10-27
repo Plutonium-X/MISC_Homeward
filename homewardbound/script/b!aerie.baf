@@ -1,0 +1,42 @@
+
+// b!aerie.baf - installs if player opts to have Homeward bound *not* kill BioWare romances
+
+IF 
+    Global("B!HBAerieSail","GLOBAL",3) //Aerie recruited, romance already restarted once
+    Global("B!HBDidIt","LOCALS",2) 
+    InParty(Myself) 
+    !Global("AerieRomanceActive","GLOBAL",0) 
+    !Global("AerieRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("B!HBDidIt","LOCALS",3) //Romance dies again, you're on your own.
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!AerieSail","GLOBAL",3) 
+    GlobalGT("Lovetalk","LOCALS",0)
+    GlobalLT("Lovetalk","LOCALS",36)
+    Global("AerieRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("AerieRomanceActive","GLOBAL",1)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("Lovetalk","LOCALS",1) 
+        RealSetGlobalTimer("AerieRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!AerieSail","GLOBAL",3) 
+    GlobalGT("Lovetalk","LOCALS",35)
+    Global("AerieRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("AerieRomanceActive","GLOBAL",2)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("Lovetalk","LOCALS",1) 
+        RealSetGlobalTimer("AerieRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 

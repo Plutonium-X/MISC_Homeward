@@ -1,0 +1,381 @@
+@9001 = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+
+@0    = ~Homeward Bound~
+@101  = ~Aerie continued adventuring after leaving <CHARNAME>'s company, driven in her travels to oppose slavery in any form. Her compassion grew tainted by revenge, however; revenge for what had been taken when she was in chains. She might have lost herself entirely had she not stumbled across a group of Avariel winged elves enslaved in Cormyr. They compelled her to come to Faenya-Dail, the home she was originally stolen from, and she learned much while there. Most importantly, she learned she was no longer one of them, and stopped pining for wings she wouldn't use anyway. Aerie eventually became a  high priestess in Understone, a gnomish village her mentor Quayle had sometimes spoken of. He had been her true family, and it was among his people that she finally found peace.~
+@102  = ~Anomen was troubled after his time in <CHARNAME>'s company. He had closely witnessed the dark power inherent in the Bhaal child, and no matter <CHARNAME>'s intent, it caused a crisis of faith. His confidence in Helm shaken, Anomen traveled without aim until arriving in the frontiers of Maztica. This was during the revolt of Yamash, an evil cleric that raised a demonic conquering horde. Anomen was drawn into the conflict, helping to organize the besieged Maztican soldiers, but he found he could not effectively train them without speaking of duty and the role a guardian must play; he was teaching the doctrine of Helm, and understanding it more as he did. In the end, his words rang true, and Yamash fell to the Disciples of Anomen, a new Order for a new land.~
+@103  = ~With his guidance no longer needed, Cernd left <CHARNAME>'s company and reunited with his son, Ahsdale. His duty to nature constantly called him away, however, and the boy grew bitter. Years later Cernd attained the title of Grand Druid, but stopped the ascension when he learned that his long-estranged child now wielded twisted magics, and commanded an army threatening the Sword Coast. Cernd abdicated, citing that he could not hold such responsibility when he had been so grossly deficient in his personal obligations. Neither Cernd nor Ahsdale would survive when they finally met in battle. They were strangers to each other, and the only common ground they found was where they fell, a spot that gave rise to a wondrous oak that turns the gravest of reds at season's change.~
+@104  = ~Edwin gained great renown in his travels with <CHARNAME>, and in the years following their association he would exploit that infamy. In time he achieved enough influence to subjugate even the Red Wizards themselves, becoming the greatest leader they had known in recent memory. Very recent memory, it turns out, as he was deposed scant days later. Such is the brief nature of conquerors in Thay, practically lining up for their turn in power. His only notable appearance following this embarrassment was in battle with Elminster of Shadowdale himself, a short affair that saw the end of Edwin's existence in the Realms. Edwina, however, tends bar in a Waterdeep tavern. She is a bitter, bitter woman.~
+@105  = ~Haer'Dalis found traveling with <CHARNAME> a fine introduction to the Realms, and once they parted company he was eager to see more. He visited such varied locales as Waterdeep, Neverwinter, and Thay, eventually fleeing each one after innocently immersing himself in local troubles. Later he would befriend a female Cambion and return with her to the Abyss, only to unintentionally end up leading a revolt on several layers of the hells. For a time, Haer'Dalis was the most-hunted man among the planes, but the ire of his enemies could not match his wanderlust, and he eventually found his way back to the city of Sigil unharmed in any permanent fashion. There he rejoined Raelis's acting troupe and was pleased to finally settle down - until the next misunderstanding, of course.~
+@106  = ~And what of Imoen, the eternal child? She had long stood in the shadow of <CHARNAME>, but she was her own person, and would find her fate where she pleased. She returned to Candlekeep for a time, her formidable skill in magic granting a greater appreciation for its tomes. It was smaller than she remembered, however, and she did not stay long. Later she was seen in such vaunted company as Khelben "Blackstaff" and Elminster, by all accounts encouraging them to not be such stick-in-the-muds. Her influence grew over time, and she may have founded a thieves' guild that now operates all the way to Neverwinter. When asked of this she always answered with a smile of purest innocence. "Heya," she would say, "it's just me, Imoen."~
+@107  = ~The events of the Bhaalspawn saga affected Jaheira deeply. It was her duty to protect the greater balance of things, but in the years to come she found an increased portion of that fight occurring within her own mind. Witness to great change while in <CHARNAME>'s company, she had become acutely aware of how fleeting life was, and how the loss of those she held dear ate away at her thoughts. In time she would be known as a tireless champion of balance, one that sometimes acted in concert with the Harpers and sometimes did not. Always, however, she remained distant and guarded, never staying long in any one place. Jaheira would cross the Realms thrice over, but she never did return to Tethyr or the Sword Coast.~
+@108  = ~Jan Jansen's life following his association with <CHARNAME> was typically convoluted, the barest of details hidden amidst his half-truths and whole lies. According to his published memoirs, "A Jansen in Every Port", after a short prison term for monkey smuggling, he returned to his first love... monkey smuggling. This led to the now infamous Gibbon Riot of '72, a tumultuous and altogether unclean event that seemed to center on the estate of the Shadow Thief Vaelag. Jan would deny that he had planned the downfall of the rogue, but he was unable to explain what practical application he had intended for a horde of knife-wielding simians. Nevertheless, the death of the admittedly disliked and generally suspect Vaelag could not be attributed to the young gnome. Strangely enough, Jan had alibis for each and every second of the day in question, and what a day it must have been! Relatives from across the Realms came forward to say that he had stopped in for tea and turnips. At his later wedding to Lissa, Jan was asked how he managed to be in so many places at once, and yet still so far from the scene of the crime. "Well," Jan would say, "when you have that many monkeys, anything is possible."~
+@109  = ~Keldorn Firecam thought his travels with <CHARNAME> marked the end of his active career, both as an adventurer and in service to the Order. He retired to Athkatla, hoping to live in as much peace as an old warrior can expect, but the call to serve came one last time. It was years later, and Amn was besieged by giants. In his 60th winter, Keldorn and five knights held a strategic pass until the main Amnish force could arrive. He won the day, but his wounds were severe and the old paladin fell on the battlefield. As his knights watched, the hand of Torm descended upon the scene, and when it departed, Keldorn was gone. From that day, visions of the True God were accompanied by the stalwart ghostly form of Keldorn at his right hand.~
+@110  = ~After leaving <CHARNAME>'s company, Korgan Bloodaxe lived in as bloody a fashion as he could manage. He took control of an entire dwarven clan, killing their leader in secret and guiding their revenge to a target of his choosing. He could have lived in luxury, but his thirst for carnage was immeasurable, and he stunned the Realms by pushing deep into the Underdark. The blind fury of the clan took even the dark elves by surprise, but holding territory in the home of the drow is a hopeless proposition. Korgan was last seen burying his axe in the gullet of a high priest of Lolth, laughing as he struck. Dwarven legend immortalized the image, and his bloodlust is now called a crusade. History, it seems, finds more heroes than madmen.~
+@111  = ~The perils that Mazzy Fentan faced at the side of <CHARNAME> did nothing to dissuade her thirst for adventure. In fact, it was not long after the events in Tethyr that she formed the Fentan Knights, a stalwart band of heroes that spawned tales across the Realms. They battled trolls to save endangered towns, turned back tides of orcs to preserve ancient forests, and faced a rogue dragon in its own lair just to make the world a better place. Their legend was larger than life, especially so for Mazzy, and it was said on occasion that if valor were inches, she'd be twenty feet tall. For all her risks, Mazzy eventually passed peacefully at a ripe old age, knowing she could take pride in everything she had done.~
+@112  = ~With the saga of the Bhaalspawn closed, Minsc fulfilled a long promised oath. He returned to Rashemen, hoping to regale the Icedragon Berserker Lodge with the tales of his deeds, and earn a place within its hallowed halls. His words were not needed. Every tavern in Faerun had a bard singing of the valiant ranger, and he was welcomed as a hero. Eventually he formed his own adventuring company, the Justice Fist, striking fear in the hearts and faces of evil until, in his advancing age, he again set out across the Realms... and disappeared. And what of Boo? Well, what is Minsc without Boo? The two would never be separated, and some say they are together still, up amongst the stars where hamsters are giants and men become legends.~
+@113  = ~Nalia grew quite powerful after her association with <CHARNAME>. Initially she traveled, learning magical lore and making influential friends, but after a year she returned to Amn and her family home of de'Arnise Hold. She found it in the control of none other than Isaea Roenal, but she was no longer the wayward child that he expected, and single-handedly brought him to justice for his indiscretions. She declared herself the inheritor of her father's ducal title, becoming a beloved ruler, respected archmage, and eventually earning a seat on the Amnish Council of Six itself. She would become a prominent figure in Amn for many years, constantly fighting for the good of the common folk and making many frustrated enemies among the nobility and Cowled Wizards both.~
+@114  = ~In the years following his resurrection by <CHARNAME>, Sarevok never settled in any one place for long. In Berdusk he is said to have routed an army of invading orcs, displaying such fearsome power and rage that terrified locals weren't sure whom to fear more. In Westgate he arrived as conqueror, brutally enforcing his will only to mysteriously vanish months later. He acted like a man that did not know himself, and all the stories agreed that Sarevok was a tortured soul, balancing between life and death, never to achieve either. Eventually he disappeared, said to have assaulted the Abyss itself, or even taken his own life. In truth, he journeyed to Kara-Tur to bury his one true love, the warrior Tamoko. He never returned, though the stories endure.~
+@115  = ~Valygar continued adventuring for several years after the Bhaalspawn saga, traveling among the wilds and becoming a common sight near Waterdeep. In time he would retire to Athkatla, content to assume a contemplative life on his family estate, but admirers among the nobility would not let him rest. He was pressured into assuming the title of Chief Inspector, a responsibility he didn't want, but corruption within the city soon gained his ire. Surprising even himself, Valygar became an effective leader, and it was this term in office that truly restored the Corthala family name. Valygar eventually married and his only son, the pride of his life, took the lessons of the father to heart. He would go on to lead the Cowled Wizards, becoming its greatest agent of reform.~
+@116  = ~No longer with <CHARNAME>, Viconia went on to found a cult dedicated to Shar in the city of Waterdeep. One of her followers betrayed her, however, prompting the slaughter of the whole tainted lot. Shar admonished Viconia strongly for this, but she was unrepentant and again wandered the Realms. Viconia was still formidable, and went on to prevent an attempt by the Knights of the Shield to take over Calimport, and even worked with Drizzt Do'Urden to save the elven city of Suldanessalar from a Zhentarim plot. For this last act, the elves accepted her, and Queen Ellesime bestowed the highest honors of the Seldarine, an accolade never before given to one of her dark kind. Viconia reportedly bowed once without emotion, and then left. Her fate remains unknown.~
+@1000    = ~Captain Ruby~
+@1001    = ~Jasmine~
+@1002    = ~[FEMSAL01] A woman on the high seas has to be tougher than any mate!~ [FEMSAL01]
+@1003    = ~[FEMSAL02] Aye, don't look at me like that, or I'll gut ye where ye stand!~ [FEMSL02]
+@1004    = ~[FEMSAL03] Grog. Grog an' a bath, aye.~ [FEMSAL03]
+@1005    = ~[FEMSAL06]~ [FEMSAL06]
+@1006    = ~[FEMSAL05]~ [FEMSAL05]
+@1007    = ~[PEASF201] Well met, and welcome!~ [PEASF201]
+@1008    = ~[PEASF202] A pleasant day, is it not?~ [PEASF202]
+@1009    = ~[PEASF207]~ [PEASF207]
+@10010   = ~[PEASF208]~ [PEASF208]
+@10011   = ~Wren~
+@10012   = ~[FESTH01] Hey, sexy! Do ye want to take a look at me ditties?~ [FESTH01]
+@10013   = ~[FESTH03] Are ye interested in some thrills, darlin'?~ [FESTH03]
+@10014   = ~[FESTH05]~ [FESTH05]
+@10015   = ~[FESTH06]~ [FESTH06]
+@10016   = ~Scimitar of the Poisoned Fang~
+@10017   = ~The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve, and is tapered to an elongated, sharp point.~
+@10018   = ~It is said that this weapon was created by Revialis the Serpent out of reverence to Talona, and that his devotion to the Lady of Poison can still be seen in its deep red glow. It is uncertain how this scimitar made its way from Memnon, the place of its forging, into the hands of a half-orc sailor, but now that it is found, it will no doubt play some part in the legends that are even now unfolding.
+
+
+STATISTICS
+
+Equipped Ability: one extra attack per round
+Combat Ability: Poison damage of 6 hit-points per round, for two rounds, if target fails a saving throw versus poison
+THAC0: +3 bonus
+Damage:  1D8 +3
+Damage type:  slashing
+Weight:  3
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type:  1-handed
+Requires: 6 Strength, 10 Dexterity
+Unusable By:
+ Cleric
+ Mage~
+@10019   = ~Red Blade~
+@10020   = ~The origins of this deceptively simple scimitar are lost in the depths of history, and indeed, little enough is known of the weapon at all. What is known is that wounds made by its blade are slow to knit, and that its victims swiftly weaken and die.
+
+
+STATISTICS:
+
+Combat Abilities: 2 extra hit points damage every round, until 10 hit points of damage done
+THAC0:  +2 bonus 
+Damage:  1d8 + 2
+Damage type:  slashing
+Weight: 4
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type:  1-handed
+Requires: 10 Strength, 10 Dexterity
+Not Usable By:
+ Cleric
+ Mage~
+@10021   = ~Wraith's Bane~
+@10022   = ~Most magical swords were forged centuries ago, in far off, exotic lands, but not Wraith's Bane. This scimitar was made in Calimport quite recently, and it was intended as a gift to a paladin of Kelemvor to assist her in her task of eradicating the undead, but it was never delivered. Instead, it was smuggled out of the smithy by a disgruntled apprentice and sold to an unsuspecting merchant in exchange for a considerable amount of black lotus. From there, the weapon made its way northward, frequently changing hands, as it seemed to attracted undead as readily as it slew them. Should its present owner encounter a Calishite paladin complaining of the theft of a sword and return the scimitar, perhaps this curse might be lifted, though the probability of either remain slim.
+
+
+STATISTICS:
+
+Always considered to be of +3 enchantment when determining what it can hit
+Combat Abilities: 2-12 +4 damage to Undead, plus they must make a saving throw vs. death (-4 penalty) or be utterly destroyed
+THAC0:  +1
+Damage:  1D8 + 2
+Damage type:  slashing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type:  1-handed
+Requires: 10 Dexterity
+Not Usable By:
+ Cleric
+ Mage~
+@10023   = ~Soul Sucker~
+@10024   = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.~
+@10025   = ~This dull, heavy dagger seems to suck warmth and energy out of the very air around it. It is uncertain where this weapon was made, or by whom, but its maker surely intended it for some ill use. 
+
+    
+STATISTICS: 
+Damage:  1D4 + 4
+THAC0:  +4 bonus
+Effect:  15% Chance of Level Drain
+Damage type:  piercing
+Weight: 1
+Speed Factor: 0
+Proficiency Type: Dagger
+Type:  1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~
+@10026   = ~Assassin's Helper~
+@10027   = ~In Skullport, the city-beneath-a-city that lies a mile below Waterdeep, life is cheap, and it is most certainly for sale. This slender, non-descript dagger has proven a useful tool in the negotiations. Looking at it, in fact, there is hardly anthing that would suggest the enchantments that make it the lethal weapon that it is. Merely weilding it enhances stealth, and magics placed upon the blade ensure that it strikes swift... and deep.
+
+
+STATISTICS:
+Special abilities: +20% to stealth while equiped
+THAC0:  +4 bonus
+Damage:  1D4 + 5
+Damage type: piercing
+Weight: 1 
+Speed Factor: 0
+Proficiency Type: Dagger
+Type:  1-handed
+Requires: 6 Dexterity
+Not Usable By:
+ Cleric~
+@10028   = ~Quicksilver~
+@10029   = ~This shiny silver dagger was found sticking out of a hay bale in a tiny fishing village on the northern Sword Coast. Retrieving it was nothing akin to pulling a sword from a stone, but it is a prize, nonetheless. It is hard to tell if the wielder of this blade is moving faster than anybody else, or if everyone else is just moving slower, but one thing is true. The wielder cannot be slowed or stunned. Additionally, there is a chance that anyone struck by this dagger will be slowed. 
+
+
+STATISTICS:
+
+Abilities: Target must save vs. wand or have movement rated slowed by 2 (for 45 seconds).  Wielder of the sword is immune to slow and stun effects.
+THAC0: +3 bonus
+Damage:  1D4 + 3
+Damage type:  piercing
+Weight: 1
+Speed Factor: 0
+Proficiency Type: Dagger
+Type:  1-handed
+Not Usable By:
+ Cleric~
+@10030   = ~Adder's Kiss~
+@10031   = ~The grotesque pommel onamentation on this well-balanced throwing dagger suggests its lethality. The blade is deceptively clean, but deadly poison glimmers in a channel that runs the length of the steel. The poison cannot be replenished, but even once it is depleted, the enchantments remain. The dagger returns to the wielder once thrown.
+
+
+STATISTICS:
+
+Combat Ability: Target must make a saving throw vs. poison or suffer 2 points of damage per second for 10 seconds.
+THAC0:  +2 bonus
+Damage:  1D4 + 2
+Damage type:  piercing
+Range: 60
+Weight: 1
+Speed Factor: 0
+Proficiency Type: Dagger
+Type:  1-handed
+Not Usable By:
+ Cleric
+ Good alignments~
+@10032   = ~Friend of the Faithless~
+@10033   = ~A ring is a small band of precious metal that is used as jewelry.  Some rare rings have had enchantments placed upon them that confer various magical abilities.  These rings are highly sought after, especially by those of the adventuring profession.~
+@10034   = ~A man who scorns the gods is alone indeed, particularly when he himself needs divine favor in the form of healing. With that in mind, Tarvo the Unbeliever, a notorious Neverwinter thief, commissioned this ring from a patient and remarkably tolerant high priest of Tyr. Its enchantments enabled Tarvo to avoid the necessity of going to the temple when his professsion endangered his health. Unfortunately, no enchantment placed on the ring could have helped the luckless Tarvo, as no spell can reunite the body with its head, once a garotte has parted them. 
+
+
+STATISTICS:
+
+Wearer is Immune to Poison
+Casts Heal once per Day
+Dexterity Bonus:  1
+Armor Class Bonus:  1
+Saving Throw Bonus:  3~
+@10035   = ~Amulet of Freedom~
+@10036   = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
+@10037   = ~Amulet of Freedom: 'Basil's Escape'
+
+Basil Swiftbough's name will live on in his native Tethyr not because of the great deeds accomplished during his lifetime or because of the endowments he made to charitable institutions, but because the descendants of the 182 children he fathered are still trying to figure out where Basil hid the treasure that enabled him to live a life of ease, seducing village maidens and naive noblewomen alike in his quest for the perfect lover. One item that has been recovered from this alleged hoard is this Amulet of Freedom. While it may not have prevented the siring of any of his numerous progeny, it undoubtably contributed to his ability to evade potential entanglements once the lady's condition became known. In addition to a minor bonus to charisma, this amulet enables the wearer to ignore any hindrance that might afffect his mobility, and grants a small measure of protection in the form of a bonus to saving throws. Some people have all the luck.
+
+
+STATISTICS:
+
+Special:  The wearer is immune to everything,  magical and otherwise,  that affects mobility in any way.  This includes haste and slow spells.
+Charisma Bonus:  1
+Saving Throw Bonus:  1
+Not Usable By:
+ Wizard Slayer~
+@10038   = ~Girdle of Damage Control~
+@10039   = ~Girdles are generally similar to belts.  Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.~
+@10040   = ~Girdle of Damage Control:  'The Untouchable' 
+    
+    Whether prudent or merely paranoid, the creator of this magical belt endowed it with enchantments that protect the wearer to some degree from all forms of physical damage. The items properties are about the only facts that are known, however. Its last owner was said to have won it while playing at dice.
+
+
+STATISTICS:
+
+Armor Class Bonus:  +3 
+Weight:  2
+Not Usable By:
+ Wizard Slayer~
+@10041   = ~Cloak of Insulation +2~
+@10042   = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
+@10043   = ~Cloak of Insulation +2: 'Firian's Embrace' 
+
+When Firian Killeraheal wrapped his beloved Amanis in this cloak for her journey from Myth Drannor to Suldanessellar, he wished to protect her from every peril she might encounter along the way. She arrived in safety, but he perished in a shipwreck on the Sea of Fallen Stars. Grieving, Amanis departed for Arvandor, leaving behind this cloak in memory of her love.
+
+
+STATISTICS:
+Acid Resistance:  +10% bonus
+Cold Resistance:  +10% bonus 
+Electricity Resistance:  +10% bonus
+Fire Resistance:  +10% bonus
+Armor Class:  +2 bonus
+Saving Throw:  +2 bonus
+Weight:  3
+
+Due to the nature of the protective enchantment, this item cannot be equipped while a ring or amulet of protection, or enchanted armor is being worn.~
+@10044   = ~Leather Armor of Stealth +3~
+@10045   = ~This suit of leather armor is light and supple, and a pleasure to wear.
+
+STATISTICS:
+
+Armor Class: 8
+Weight: 15
+Miscast Arcane Magic: +10%
+Requires: 3 Strength
+Not Usable By:
+ Mage
+ Kensai
+ Monk
+ Shapeshifter~
+@10046   = ~Leather Armor of Stealth +3: 'Griegg's Case' 
+
+For a dozen years, Captain Griegg Olaf ruled the Sea of Swords between Luskan and the Ten Towns. He attributed his success in part to this supple, yet protective armor, but in truth, his sovereignty probably persisted as long as it did because no one wanted to fight him for that little-traveled sea route. What is certain, however, is that the armor's ability to blend into the shadows helped him escape when his boasting in a Luskan tavern drew the attention of the Hosttower. After that, Greigg sold his armor, moved to Waterdeep, and opened a cheese shop.
+
+
+STATISTICS:
+
+Stealth: +30% bonus 
+Fire Resistance: +10% bonus 
+Armor Class: 5
+Weight: 4
+Requires: 3 Strength
+Not Usable By:
+ Mage
+ Kensai
+ Monk
+ Shapeshifter~
+@10047   = ~Narfell, an Empire of Ghosts~
+@10048   = ~Narfell, an Empire of Ghosts 
+
+Once, Narfell was a thriving empire under Nentyarch of Tharos, who conquered and united the surrounding kingdoms between -970 DR and -946 DR. At its zenith, the Nar Empire extended beyond its current borders of Lake Ashane in the east and the Giantspire Mountains in the west, and included much of Thesk, the Great Dale, and part of Thay. Though the emperor held titular authority, the real power in the Nar Empire was held by the priests, who enlisted the armies of demon lords through blood rituals. Perhaps their power was spread too thin, or perhaps their arrogance too great, because in the Year of Clipped Wings, -623 DR, the Nar's simultaneous invasions of both Unther and Mulhorand ended in epic failure. This failed attempt at expanding the empire weakened it substantially, making it an attractive target for the Raumathari Empire. The Year of the Stone Giant, -160 DR, found both empires locked in a war that would last for decades and decimate the population of both realms. Narfell's demon lords were not enough to save it. Both empires were crushed, and their inhabitants scattered.
+
+Narfell's displaced survivors might have sworn to rebuild the empire, but it never came to pass. Too much had been lost to ever be regained. Now, the Nar peoples exist as barbarian tribes, merely trying to survive the next winter. Narfell's glorious history is reduced to tattered shreds of legend, and its majectic cities are no more than haunted ruins scattered across the cold, harsh landscape.~
+@10049   = ~The Great Rift, Home of the Gold Dwarves~
+@10050   = ~The Great Rift, Home of the Gold Dwarves 
+
+The Great Rift is said to be part of the Shining South, though more accurately, one might say that the geographical region is the Great Rift and the underground nation within it is the Deep Realm. The Deep Realm is a fully autonomous monarchy ruled from the capital city of Underhome. It is inhabited mostly by gold dwarves, a striking sub-race of dwarves with darkened skin, gold or yellow hair, and amber-colored eyes. Gold dwarves tend to be more conservative than their shield dwarf cousins, and involve themselves little with outsiders, even those that live on the surface of their own country. Those of the Great Rift's million inhabitatns who do not live in the Deep Realm are shield dwarves, gnomes, and a few humans in the city of Khôltar.~
+@10051   = ~A Wee Book of Riddles~
+@10052   = ~A Wee Book of Riddles
+
+I am rarely sought, but always found.
+I reward all with equal measure.
+I am the adventurer's constant companion, though all seek to avoid me.
+I might be cheated, but I cannot be denied.
+I am called terrible, though I am not always feared.
+In the end, I will find you.
+What am I?
+
+
+Thy feet touch mine, but thy head touches me not.
+I am fickle indeed, and will desert thee in the darkest places.
+Thy height may be fixed, but mine is not.
+I wear thy shape, but look little like thee.
+What am I?
+
+
+One can give of me freely and be called wise, yet squander me and be a fool.
+A price is often fixed to me, yet no coin will buy more.
+Often I have value only after I have fled.
+I am invisible and intangible, yet no creature exists without me.
+A person can take many, but still have only one.
+What am I?
+
+
+Old men boast of possessing me, yet I am no man's exclusive right.
+By having less of me, one often gains more of me, though the gift is seldom welcome.
+I am possessed most by those who need me least.
+I am often claimed, but seldom understood.
+I may exist in solitude, but I only gain worth when shared.
+Those who need me most seldom appreciate me.
+What am I?
+
+
+A thing may be full of me, and still hold nothing.
+I am made only by taking something else away.
+When the wind blows across me, I can make a pleasant sound.
+A man may make me wide and deep, and still I will have no substance.
+What am I?
+
+
+I am water and salt, but I am not the sea.
+I am born of both sorrow and joy.
+I am often restrained, but the loosing of me brings relief.
+What am I?
+
+
+I spring unbidden, yet I may be summoned by another.
+I am often invoked, yet I am seldom welcome when I appear.
+Held in check, I am resented by the bearer, released, I am resented by the object of my existence.
+I am born of love, but I poison the thing that created me.
+What am I?
+
+
+I was born in a field, where I grew tall and slender.
+I was cut down in my prime and beaten with sticks until I was broken.
+I was cast between two stones and ground down to almost nothing.
+I was drowned in water, and pounded with roughened fists.
+I was left alone for a time, but when I had begun to rise up, I was thrown into a casket and roasted in the fire.
+When I emerged, I was broken into many pieces and utterly consumed.
+What am I?
+
+
+Give up?
+
+Death, Thy shadow, Life, Wisdom, A hole, Tears, Jealousy, Grain~
+@10053   = ~Nanny Lu's Book of Limericks~
+@10054   = ~Nanny Lu's Book of Limericks
+
+In a castle that had a deep moat
+A maid to her lover, she wrote.
+To her, he came,  
+But left, to his shame
+'Cause he hadn't remembered a boat.
+
+
+There once was a man of great deeds
+Who thought first of all others' needs.
+And when his turn came, 
+His horse pulled up lame,
+By the roadside, he sat in the weeds.
+
+
+There was a young girl slim and fair
+With long tresses of pale golden hair.
+She brushed it at night
+'Til it gleamed in the light,
+Then she cut it all off on a dare.
+
+
+There once was a Lantanese gnome
+Whose husband was eager to roam.
+She'd wait by the door
+'Til she'd stand it no more.
+Returning, he'd find no one home.
+
+
+There once was a lad fair and randy
+Always with lies quick to bandy.
+To turn a maid's head,
+Or get into her bed, 
+Then out through a door that was handy.
+
+
+There once was a gullible lass 
+Who lived in a house made of glass,
+With curtains, 'tis true,
+But all could see through,
+And chuckle a bit as they pass.~
+@10055   = ~Leather Hat~
+@10056   = ~Leather Hat:
+    
+    Hats provide protection from sun, rain, and cold. This one is made of leather, with the wide brim turned up along three sides and secured to the crown of the hat to form a triangular shape.~
+@10057   = ~Crimson Sash~
+@10058   = ~Crimson Sash.
+    
+    Some belts hold up one's trousers or secure a weapon, but this long band of red silk seems to be more ornamental than functional.~
+@10059   = ~Jasmine's Private Stock~
+@10060   = ~Homeward Bound does *not* kill BioWare romances~
+@10061   = ~Romances end due to separation~
+@10062   = ~Original game behavior is unchanged~
+@100000  = ~This mod requires that ToB be installed.~ 

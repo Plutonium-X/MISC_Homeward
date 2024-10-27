@@ -1,0 +1,659 @@
+//Ruby
+@0    = ~Bonjour à vous. Qu'est-ce que l'Capitaine Ruby peut faire pour vous aujourd'hui ?~
+@1    = ~Vous êtes capitaine de navire ?~
+@2    = ~Vous pouvez me faire sortir de ce rocher ?~
+@3    = ~Pouvez-vous me parler de cet endroit ?~
+@4    = ~Comment devrait-on s'y prendre, si on voulait entrer dans l'asile ?~
+@5    = ~Il y a une bonne auberge, dans le coin ?~
+@6    = ~J'ai soif. Où est la taverne la plus proche ?~
+@7    = ~Vous connaissez un endroit où je pourrais m'acheter de l'équipement qui ait un minimum de qualité ?~
+@8    = ~Vous savez où on pourrait s'amuser, dans le coin ?~
+@9    = ~Vous êtes une pirate ?~
+@10   = ~Ouais. Ca vous pose un problème ?~
+@11   = ~On ne rencontre pas beaucoup de femmes, dans ce milieu.~
+@12   = ~Figurez-vous que oui.~
+@13   = ~Mais pas du tout ! Je n'ai aucun problème avec ça, c'est juste que je cherche un navire qui pourrait me ramener au continent.~
+@14   = ~Non, c'était juste de la curiosité.~
+@15   = ~Laissez tomber ! Je souhaite juste vous poser quelques questions.~
+@16   = ~Le prenez pas mal, mais j'vous emmènerai nulle part. Vous êtes du genre à attirer les ennuis, et j'veux pas d'ça sur mon bateau.~
+@17   = ~Ici, c'est Brynnlaw. Une ville sans foi ni loi !~
+@18   = ~Prêtez pas attention à moi. J'suis d'humeur un peu taquine en ce moment.~
+@19   = ~Brynnlaw, c'est le port le plus crade et l'plus mal famé de ce côté-ci de Port-Ponant. Mais on gagne facilement sa croûte, pour peu qu'on soit prêt à prendre des risques.~
+@20   = ~Et pourquoi diable vous voudriez aller là-bas ? J'ai entendu dire qu'il y a un tas de barjos, d'enragés, de psychopathes, et même pire, dans ce coin. On dit qu'ils y enferment même des mages...~
+@21   = ~Moi j'vous l'dis, frérot. Si vous savez c'qui est bon pour vot'santé, vous feriez mieux d'éviter cet endroit comme la peste.~ ~Moi j'vous l'dis, soeurette. Si vous savez c'qui est bon pour vot'santé, vous feriez mieux d'éviter cet endroit comme la peste.~
+@22   = ~Y'a qu'une taverne à Brynnlaw, et elle a suffisamment d'chambres pour ceux qui ont pas un bateau où dormir. L'bien nommé Singe Vulgaire ! Vous avez qu'à monter l'escalier, là. Vous pouvez pas l'rater.~
+@23   = ~Z'avez qu'à rester dans l'coin un moment, un aut'combat va avoir lieu dans peu de temps. Si vous me d'mandez où qu'il y a un bordel ici, il y a la Salle des Fêtes de Dame Galvena, mais si c'est ça, vot'truc, j'vous conseille d'apporter une ou deux potions d'soins.~
+@24   = ~Ouais, y'a bien un magasin pas loin du Singe Vulgaire. Mais j'me souviens plus très bien du nom du proprio. Mais ma 'tite Jasmine pourrait bien s'laisser persuader de se séparer de quelques uns de ses jouets favoris... si vous y mettez l'prix.~
+@25   = ~Surveillez vot'langue fourchue, marin d'eau douce ! Moi, une pirate ?!!~
+@26   = ~Du calme, Ruby. Ils te connaissent pas bien, c'est tout. Ptêt'bien qu'ils ont jamais vu un vrai pirate avant, et qu'ils pensent que t'en es.~
+@27   = ~Ouais, ben, que j'vous y reprenne plus à parler comme ça d'vant moi. J'suis un capitaine de navire honnête, et mon équipage est composé d'gens bien et respectueux, alors j'vous conseille d'surveiller vos manières en ma présence si vous voulez qu'on s'entende bien tous les deux, jeune <MANWOMAN>.~
+@28   = ~Et ben, il n'y a pas beaucoup d'femmes marins, et encore moins des qui ont les moyens d'avoir leur prop'navire, pour sûr. Mais j'gage que la qualité est supérieure à la quantité.~
+@29   = ~Ben alors, tirez-vous, et m'faites pas perdre mon temps.~
+@30   = ~Et sinon, il vous fallait aut'chose ?~
+@31   = ~Est-ce que je peux louer votre navire pour me ramener au continent ?~
+@32   = ~Que savez-vous de cet endroit ?~
+@33   = ~Il y a une auberge, dans le coin ?~
+@34   = ~Pouvez-vous mme dire où se trouve la taverne la plus proche ?~
+@35   = ~Est-ce qu'il y a un magasin qui vend du bon équipement, ici ?~
+@36   = ~Où doit-on aller, si on veut passer du bon temps ?~
+@37   = ~Maint'nant, si un d'vos amis souhaite partir... Il s'pourrait bien qu'il m'reste de la place pour une à trois personnes.~
+@38   = ~J'prends 5000 pièces d'or pour ramener une femme, et 10000 pour un homme. Mes filles et moi, on a un navire respectable. Un homme à bord, ça attire l'mauvais oeil.~
+@39   = ~J'aimerais renvoyer Aerie au continent.~
+@40   = ~J'aimerais renvoyer Anomen au continent.~
+@41   = ~J'aimerais renvoyer Cernd au continent.~
+@42   = ~J'aimerais renvoyer Edwin au continent.~
+@43   = ~J'aimerais renvoyer Haer'Dalis au continent.~
+@44   = ~J'aimerais renvoyer Imoen au continent.~
+@45   = ~J'aimerais renvoyer Jaheira au continent.~
+@46   = ~J'aimerais renvoyer Jan au continent.~
+@47   = ~J'aimerais renvoyer Keldorn au continent.~
+@48   = ~J'aimerais renvoyer Korgan au continent.~
+@49   = ~J'aimerais renvoyer Mazzy au continent.~
+@50   = ~J'aimerais renvoyer Minsc au continent.~
+@51   = ~J'aimerais renvoyer Nalia au continent.~
+@52   = ~J'aimerais renvoyer Valygar au continent.~
+@53   = ~J'aimerais renvoyer Viconia au continent.~
+@54   = ~J'aimerais renvoyer Yoshimo au continent.~
+@55   = ~J'ai changé d'avis. Je ne veux plus renvoyer Aerie.~
+@56   = ~J'ai changé d'avis. Je ne veux plus renvoyer Anomen.~
+@57   = ~J'ai changé d'avis. Je ne veux plus renvoyer Cernd.~
+@58   = ~J'ai changé d'avis. Je ne veux plus renvoyer Edwin.~
+@59   = ~J'ai changé d'avis. Je ne veux plus renvoyer Haer'Dalis.~
+@60   = ~J'ai changé d'avis. Je ne veux plus renvoyer Imoen.~
+@61   = ~J'ai changé d'avis. Je ne veux plus renvoyer Jaheira.~
+@62   = ~J'ai changé d'avis. Je ne veux plus renvoyer Jan.~
+@63   = ~J'ai changé d'avis. Je ne veux plus renvoyer Keldorn.~
+@64   = ~J'ai changé d'avis. Je ne veux plus renvoyer Korgan.~
+@65   = ~J'ai changé d'avis. Je ne veux plus renvoyer Mazzy.~
+@66   = ~J'ai changé d'avis. Je ne veux plus renvoyer Minsc.~
+@67   = ~J'ai changé d'avis. Je ne veux plus renvoyer Nalia.~
+@68   = ~J'ai changé d'avis. Je ne veux plus renvoyer Valygar.~
+@69   = ~J'ai changé d'avis. Je ne veux plus renvoyer Viconia.~
+@70   = ~J'ai changé d'avis. Je ne veux plus renvoyer Yoshimo.~
+@71   = ~J'aimerais renvoyer quelqu'un d'autre chez lui.~
+@72   = ~A bien y réfléchir, je ne souhaite pas changer mes plans.~
+@73   = ~C'est comme vous voulez. C'est vot'argent, après tout.~
+@74   = ~Ben ça, vous r'voilà ! Qu'est-ce que l'Capitaine Ruby peut faire pour vous ?~
+@75   = ~Est-ce que vous pouvez me faire quitter cette île ?~
+@76   = ~J'ai décidé de ce que j'allais faire. Si vous devez mettre les voiles, pas la peine de m'attendre.~
+@77   = ~Là, va y'avoir un problème : j'ai plus de place ! Vous voulez p'têt'reprendre quelqu'un avec vous ? On peut faire un échange, si vous l'voulez.~
+@78   = ~J'aimerais reprendre Aerie.~
+@79   = ~J'aimerais reprendre Anomen.~
+@80   = ~J'aimerais reprendre Cernd.~
+@81   = ~J'aimerais reprendre Edwin.~
+@82   = ~J'aimerais reprendre Haer'Dalis.~
+@83   = ~J'aimerais reprendre Imoen.~
+@84   = ~J'aimerais reprendre Jaheira.~
+@85   = ~J'aimerais reprendre Jan.~
+@86   = ~J'aimerais reprendre Keldorn.~
+@87   = ~J'aimerais reprendre Korgan.~
+@88   = ~J'aimerais reprendre Mazzy.~
+@89   = ~J'aimerais reprendre Minsc.~
+@90   = ~J'aimerais reprendre Nalia.~
+@91   = ~J'aimerais reprendre Valygar.~
+@92   = ~J'aimerais reprendre Viconia.~
+@93   = ~J'aimerais reprendre Yoshimo.~
+@94   = ~Non, en fait, je préfère ne pas modifier notre arrangement.~
+@95   = ~Non. J'ai décidé de ce que j'allais faire, alors si vous devez mettre les voiles, pas la peine de m'attendre.~
+@96   = ~Si c'est c'que vous voulez, pas d'souci. J'resterai dans l'coin un moment, alors si vous changez d'avis, faites-moi signe.~
+@97   = ~Merci d'me mettre au jus. Ca va faire du bien d'quitter cette maudite île et d'retourner en mer.~
+@98   = ~Adieu, et qu'les dieux vous bénissent.~
+@99   = ~Bien. Comme j'le disais, j'peux prendre jusqu'à trois passagers.~
+@100  = ~Si j'compte bien, on est complet, maint'nant. Si vous pensez changer d'avis bientôt, j'peux rester à quai un jour ou deux d'plus, mais si vous êtes sûr de vous, on peut partir à la prochaine marée. C'est comme vous voulez.~ ~Si j'compte bien, on est complet, maint'nant. Si vous pensez changer d'avis bientôt, j'peux rester à quai un jour ou deux d'plus, mais si vous êtes sûre de vous, on peut partir à la prochaine marée. C'est comme vous voulez.~
+@101  = ~Ca ne vous dérangerait pas de rester ici un petit peu plus longtemps ?~
+@102  = ~Vous devriez attendre un jour ou deux de plus.~
+@103  = ~Ce navire vous appartient. Que vous restiez ou que vous partiez, ce ne sont pas mes affaires.~
+@104  = ~J'ai décidé de ce que j'allais faire, et je suis sûr de moi. Vous pouvez partir.~ ~J'ai décidé de ce que j'allais faire, et je suis sûre de moi. Vous pouvez partir.~
+@105  = ~Il nous reste encore de la place, alors si vous voulez me confier quelqu'un d'autre, dites-le maint'nant.~
+@106  = ~Au cas où ça vous s'rait sorti d'l'esprit, le tarif est de 5000 pièces d'or pour une femme et 10000 pour un homme.~
+@107  = ~En fin de compte, je vais m'en tenir à mes décisions, alors si vous devez mettre les voiles, pas la peine de m'attendre.~
+@108  = ~Je ne souhaite reprendre personne.~
+@109  = ~J'reste encore un peu dans l'coin, au cas où vous changeriez d'avis.~
+@110  = ~Dans ce cas, j'vous rembourse vos 5000 pièces d'or.~
+@111  = ~Dans ce cas, j'vous rembourse vos 10000 pièces d'or.~
+@112  = ~J'ai renvoyé Aerie chez elle.
+
+J'ai demandé à Aerie de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver au cirque.~
+@113  = ~J'ai renvoyé Aerie chez elle.
+
+J'ai demandé à Aerie de repartir à bord de l'Oiseau des Mers, même si j'aurais pu le lui demander plus poliment. Je pourrai la retrouver au cirque.~
+@114  = ~[AERIE] M-mais vous ne pouvez pas me laisser ici ! Pas avec tous ces voyous dans le coin !~
+@115  = ~[RUBY] N'ayez pas peur, on vous surveillera. Pour 5000 pièces d'or, le prix de la protection est compris, alors on laissera rien vous arriver. Et une fois débarqués, j'vous f'rai raccompagner chez vous par quelques unes de mes filles.~
+@116  = ~[AERIE] Je... je n'ai pas vraiment d'endroit que je pourrais appeler chez moi. Je suppose que je pourrais retourner au cirque... mais il n'empêche que ce serait injuste de me laisser ici toute seule.~
+@117  = ~[AERIE] Et moi qui croyais que vous m'aimiez bien !~
+@118  = ~[AERIE] Et qu'en est-il de nous ? Je pensais être spéciale à vos yeux !~
+@119  = ~[PC] Ca ne durera pas longtemps, Aerie. Je fais ce que j'ai à faire ici et je reviens pour vous, je le promets.~
+@120  = ~Mais c'est le cas, Aerie, et c'est pour ça que je veux que vous soyez en sécurité. Le Capitaine Ruby est une femme de confiance, et son équipage est sans doute plus que capable. Elles ne laisseront rien de fâcheux vous arriver.~
+@121  = ~Vous êtes tout à mes yeux, Aerie, et c'est pour ça que je veux que vous soyez en sécurité. Le Capitaine Ruby est une femme de confiance, et son équipage est sans doute plus que capable. Elles ne laisseront rien de fâcheux vous arriver.~
+@122  = ~[PC] J'essaie de faire pour le mieux, Aerie. Essayez de comprendre, je vous en prie.~
+@123  = ~[PC] Je n'aime pas cela non plus, Aerie, mais je fais ce que je dois faire. Je vous en prie, ne rendez pas les choses plus difficiles.~
+@124  = ~[PC] Arrêtez de chouiner, Aerie. C'est ennuyeux au possible, et ça ne vous apportera rien de bon. Vous accompagnez le Capitaine Ruby un point c'est tout !~
+@125  = ~[PC] Très bien, vous avez gagné. Vous restez avec moi.~
+@126  = ~[PC] Pourquoi, qu'est-ce que j'ai dit ? Mais bien sûr que non que je ne veux pas que vous partiez ! Ou avais-je donc la tête ?~
+@127  = ~[PC] Je reviendrai plus tard. Je n'ai pas 5000 pièces d'or à dépenser pour le moment.~
+@128  = ~Dieux merci ! Je n'aurais pu rester ici une minute de plus.~
+@129  = ~Oh... alors je vais y aller, dans ce cas... mais je persiste à dire que je n'aime pas ça. Je vais retourner au cirque. Revenez me chercher là-bas, d'accord ?~
+@130  = ~Comment... comment pouvez-vous vous montrer aussi cruel ? Je m'en vais, alors, parce que je n'ai pas le choix. Mais je persiste à dire que je n'aime pas ça. Je serai au cirque.~ ~Comment... comment pouvez-vous vous montrer aussi cruelle ? Je m'en vais, alors, parce que je n'ai pas le choix. Mais je persiste à dire que je n'aime pas ça. Je serai au cirque.~
+@131  = ~Merci, <CHARNAME> ! Je préfère de loin être en votre compagnie.~
+@132  = ~Oui, merci bien. J'ai l'impression d'avoir attendu ici depuis une éternité.~
+@133  = ~Je suis toute seule, et entourée de pirates... mais je pense pouvoir dire que tout va bien.~
+@134  = ~Je... je ne sais pas. Je pense que cet homme là-bas est probablement un pirate, et il me regarde tout le temps d'un manière étrange.~
+@135  = ~J'ai renvoyé Anomen chez lui.
+
+J'ai demandé à Anomen de repartir à bord de l'Oiseau des Mers. Je pourrai le retrouver au quartier général de l'Ordre du Coeur Radieux à Athkatla.~
+@136  = ~J'ai renvoyé Anomen chez lui.
+
+J'ai demandé à Anomen de repartir à bord de l'Oiseau des Mers. Je pourrai le retrouver à l'auberge de la Couronne de Cuivre à Athkatla.~
+@137  = ~[ANOMEN] Vous n'allez pas vraiment me laisser ici ! J'ai juré de vous porter assistance dans votre quête.~
+@138  = ~[RUBY] C'est entre vous et vot'chef. Ca sera 10000 pièces d'or pour vous, vu qu'z'êtes un homme.~
+@139  = ~[ANOMEN] Jamais je n'aurais pensé que vous vous débarrasseriez ainsi d'un compagnon de voyage, quel qu'en soit le coût.~
+@140  = ~[ANOMEN] Votre compagnie me manquera énormément. Nous avons traversé tant de choses, tous les deux.~
+@141  = ~[ANOMEN] Ma dame ! Je croyais que nous étions sur la même longueur d'onde !~
+@142  = ~[PC] Ce n'est que temporaire, Anomen. Laissez-moi régler deux-trois choses, et je reviens pour vous.~
+@143  = ~Nous avons travsersé tant de choses, vous et moi, Anomen, et nous aurons bien des occasions d'être ensemble lorsque je reviendrai pour vous, mais pour le moment, il faut que vous accompagniez le Capitaine Ruby.~
+@144  = ~C'est le cas, Anomen, et ça ne changera pas. Mais nous devons nous séparer quelques temps, toutefois je vous promets de revenir pour vous dès que possible.~
+@145  = ~[PC] J'essaie de faire pour le mieux, Anomen. Essayez de comprendre, je vous en prie.~
+@146  = ~[PC] J'aurais cru que vous en particulier étiez en mesure de comprendre que je le fais non pas parce que j'en ai envie, mais parce que je le dois.~
+@147  = ~[PC] Arrêtez de geindre, Anomen, c'est particulièrement agaçant. Vous accompagnez le Capitaine Ruby, ou vous partez à la nage. A vous de choisir.~
+@148  = ~[PC] Bon, d'accord, j'ai changé d'avis. Vous restez avec moi.~
+@149  = ~[PC] Je reviendrai plus tard. Je n'ai pas 10000 pièces d'or à dépenser pour le moment.~
+@150  = ~Je constate avec plaisir que vous êtes revenu à la raison.~ ~Je constate avec plaisir que vous êtes revenue à la raison.~
+@151  = ~Hmpf. Vous faites ce que vous pensez être correct, j'en suis sûr. Mais encore faut-il que ce soit une bonne décision...~
+@152  = ~Si vous devez revenir me chercher, je serai à l'Ordre du Coeur Radieux.~
+@153  = ~Si vous devez revenir me chercher, je serai à la Couronne de Cuivre.~
+@154  = ~Hmpf. Pas besoin d'être aussi grossier !~ ~Hmpf. Pas besoin d'être aussi grossière !~
+@155  = ~Helm tout-puissant, vous êtes revenu à la raison.~ ~Helm tout-puissant, vous êtes revenue à la raison.~
+@156  = ~Dans ce cas, j'attendrai ici-même. Mais cet endroit ne me sied guère, et cela m'énerve au plus haut point.~
+@157  = ~J'ai renvoyé Cernd chez lui.
+
+J'ai demandé à Cernd de repartir à bord de l'Oiseau des Mers. Je pourrai le retrouver au Bosquet des Druides.~
+@158  = ~[CERND] Je n'aime pas cet endroit, et j'aime encore moins les voyages en mer, mais j'endurerai tout ceci s'il le faut.~
+@159  = ~[RUBY] J'peux pas dire que c'est l'pied d'avoir un empoté qui ne jure que par le plancher des vaches, mais l'offre tient toujours. Ca sera 10000 pièces d'or pour vous, vu qu'z'êtes un homme.~
+@160  = ~[CERND] Je ne peux que me demander pourquoi jeter la pomme qui est encore verte, mais tu es le chef de ce groupe, et j'obéirai à tes décisions.~
+@161  = ~[PC] Nos chemins se recroiseront de nouveau, Cernd. Mais avant de revenir pour toi, je dois régler deux-trois choses.~
+@162  = ~[PC] J'essaie de faire pour le mieux, Cernd. Essaye de comprendre, je t'en prie.~
+@163  = ~[PC] Pour une fois, juste pour une fois, pourrais-tu éviter de remettre en cause mes décisions ? La dernière chose dont j'ai besoin maintenant, c'est bien d'un moralisateur.~
+@164  = ~[PC] J'ai changé d'avis. Tu peux rester dans le groupe.~
+@165  = ~[PC] Comment ai-je pu être aussi bête ? Il est hors de question de te renvoyer du groupe.~
+@166  = ~Tu fais preuve de bon sens malgré ton jeune âge.~
+@167  = ~Selon tes ordres. Je retournerai au Bosquet. Mère Nature aura sans doute besoin de moi là-bas.~
+@168  = ~Tu es dur. J'espère que tu te montreras aussi intelligent que tu es sévère, si tu veux survivre sans mon aide. Pour ma part, je m'en retournerai au Bosquet.~ ~Tu es dure. J'espère que tu te montreras aussi intelligent que tu es sévère, si tu veux survivre sans mon aide. Pour ma part, je m'en retournerai au Bosquet.~
+@169  = ~Tu fais preuve de sagesse.~
+@170  = ~Ouais, contente-toi de retourner dans le groupe et allons-y.~
+@171  = ~Je voulais juste voir comment tu allais.~
+@172  = ~J'attendrai ton retour au Bosquet.~
+@173  = ~J'ai renvoyé Edwin chez lui.
+
+J'ai demandé à Edwin de repartir à Athkatla à bord de l'Oiseau des Mers. Je pourrai le retrouver à la Couronne de Cuivre.~
+@174  = ~[EDWIN] Alors c'est tout ? Tu te contentes de m'abandonner sur un rafiot désespérant avec pour seule compagnie des pirates puantes ?~
+@175  = ~[EDWIN] (Bien que la perspective de passer des jours en mer entouré de jeunes femmes légères ne soit pas déplaisante.)~
+@176  = ~[RUBY] Ce sera dix mille pour le prendre avec nous, et il a intérêt à garder ses mains dans ses poches !~
+@177  = ~[EDWIN] <CHARNAME>, tu n'es donc pas satisfait de mes talents ?~ ~[EDWIN] <CHARNAME>, tu n'es donc pas satisfaite de mes talents ?~
+@178  = ~[PC] Tes talents sont très appréciés, Edwin, et je compte bien te reprendre à mes côtés dès que l'occasion se présentera, mais pour le moment, j'ai deux-trois petites choses à faire.~
+@179  = ~[PC] J'essaie de faire pour le mieux, Edwin. Essaye de comprendre, je t'en prie.~
+@180  = ~[PC] Tu surestimes l'importance que tu as à mes yeux, Edwin. Contente-toi d'accompagner le Capitaine Ruby, et je te retrouverai... quelque part.~
+@181  = ~[PC] Finalement, je ferais peut-être mieux de te garder là où je pourrai te voir. Reste avec moi.~
+@182  = ~[PC] Oh, non ! Jamais je ne pourrai m'en sortir sans toi ! Reste, s'il te plaît.~
+@183  = ~Enfin, tu es finalement revenu à la raison ! Allons-y.~ ~Enfin, tu es finalement revenue à la raison ! Allons-y.~
+@184  = ~Très bien, je suppose qu'il va falloir que je reste là jusqu'à ce que tu récupères toute ta santé mentale. (Ce qui ne prendra sans doute pas très longtemps, même pour quelqu'un de suffisamment dérangé pour s'imaginer pouvoir survivre sans mon aide.)~
+@185  = ~Lorsqu'enfin, cela arrivera, tu pourras me retrouver à la Couronne de Cuivre.~
+@186  = ~Quelle insolence ! Lorsque tu seras de nouveau sain d'esprit, tu pourras supplier mon pardon à la Couronne de Cuivre. (Dans l'hypothèse où ce gorille aura survécu plus d'un jour sans mes inestimables talents... pourquoi je perds mon temps avec des crétins comme eux, cela restera un mystère.)~ ~Quelle insolence ! Lorsque tu seras de nouveau saine d'esprit, tu pourras supplier mon pardon à la Couronne de Cuivre. (Dans l'hypothèse où cette guenon aura survécu plus d'un jour sans mes inestimables talents... pourquoi je perds mon temps avec des crétins comme eux, cela restera un mystère.)~
+@187  = ~Enfin, tu es revenu à la raison.~ ~Enfin, tu es revenue à la raison.~
+@188  = ~J'ai renvoyé Haer'Dalis chez lui.
+
+J'ai demandé à Haer'Dalis de repartir à Athkatla à bord de l'Oiseau des Mers. Je pourrai le retrouver au théâtre de l'auberge des Cinq Chopes.~
+@189  = ~J'ai renvoyé Haer'Dalis chez lui.
+
+J'ai demandé à Haer'Dalis de repartir à Athkatla à bord de l'Oiseau des Mers. Je pourrai le retrouver au théâtre de l'auberge des Cinq Chopes... bien qu'il semble ne pas être désireux de me rejoindre de nouveau.~
+@190  = ~[HAERDALIS] Ha ! Les forces de l'Entropie font à nouveau leur oeuvre en te faisant m'abandonner dans un tel endroit ! As-tu pensé à prévoir l'endroit où ce pauvre moineau se posera ?~
+@191  = ~[RUBY] Pour 10000 pièces d'or, on vous "posera" à Athkatla.~
+@192  = ~[HAERDALIS] Ah, là où le destin me mènera, j'imagine ? Mon corbeau, souhaites-tu vraiment que nous nous séparions ?~
+@193  = ~[PC] Ce ne sera pas long, Haer'Dalis. Va à Athkatla, je t'y retrouverai.~
+@194  = ~[PC] J'essaie de faire pour le mieux, Haer'Dalis. Essaye de comprendre, je t'en prie.~
+@195  = ~[PC] Le spectacle est terminé, Haer'Dalis. Monte dans ce fichu bateau !~
+@196  = ~[PC] Hmm, maintenant que j'y pense, peut-être que je ferai mieux de te garder avec moi, après tout.~
+@197  = ~[PC] Où avais-je la tête pour m'imaginer que je pourrais m'en sortir sans ta ruse ? Viens à moi, Garde Fatal !~
+@198  = ~Oui... le corbeau et le moineau ensemble ! Comme si nous ne nous étions jamais quittés.~
+@199  = ~N'aie crainte. Ce moineau saura s'élever dans les airs malgré le vent qui le bouscule. Je serai en-dessous des Cinq Chopes, à moins qu'une lubie ne m'emmène ailleurs.~
+@200  = ~Tes mots sonnent tels des poignards à mes oreilles ! Eût-il seulement fallu que ton bon sens soit aussi acéré ! Je m'en retourne en-dessous des Cinq Chopes. Si la chance est avec moi, tu ne m'y trouveras point.~
+@201  = ~Oui, il m'est fort aise que nous continuions comme nous avons commencé. En avant, mon corbeau !~
+@202  = ~J'ai renvoyé Imoen chez elle.
+
+J'ai demandé à Imoen de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver à la Couronne de Cuivre.~
+@203  = ~[IMOEN] Je ne m'attendais pas à ça. Enfin, je ne sais même pas où aller !~
+@204  = ~[RUBY] Vous inquiétez pas, poupée. Pour 5000 pièces d'or, le Capitaine Ruby et ses filles vous lâcheront pas dans la nature.~
+@205  = ~[RUBY] Si j'étais vous, quitte à rester à Athkatla, j'irais crécher à la Couronne de Cuivre. Beaucoup de gars préfèrent la Bonté Marine, mais j'trouve que c'est justement une bonne raison d'éviter l'endroit. A la Couronne, les draps sont propres, et les prix sont raisonnables.~
+@206  = ~[IMOEN] Alors dans ce cas, la Couronne de Cuivre ferait l'affaire. Mais rien n'a encore été décidé, hein, <CHARNAME> ?~
+@207  = ~[PC] Tu as déjà traversé beaucoup de choses, Imoen. Je refuse de te laisser en supporter davantage, pas si j'ai un moyen de te mettre en sécurité à Athkatla. On se reverra bientôt, je te le promets.~
+@208  = ~[PC] J'essaie de faire pour le mieux, Imoen. Essaye de comprendre, je t'en prie.~
+@209  = ~[PC] Je t'en prie, Imoen, ne me rend pas la tâche plus difficile. Va avec le Capitaine Ruby.~
+@210  = ~[PC] Oh, bon, d'accord. Tu peux rester.~
+@211  = ~[PC] Hmm, tu as traversé tant d'épreuves difficiles. Je ferais sans doute mieux de te garder avec moi, pour m'assurer que tu vas bien.~
+@212  = ~Oh... bon, s'il doit en être ainsi, tu pourras me retrouver à la Couronne de Cuivre. Ne sois pas trop long !~ ~Oh... bon, s'il doit en être ainsi, tu pourras me retrouver à la Couronne de Cuivre. Ne sois pas trop longue !~
+@213  = ~Ca va, ça va, j'ai compris ! J'irai à la Couronne de Cuivre. Mais reviens vite, d'accord ?~
+@214  = ~Oh, merci ! Je n'étais pas prête à ce que nous nous séparions maintenant.~
+@215  = ~C'est bon de te revoir. Bon, on y va ? J'aimerais voyager avec toi, si tu le permets.~
+@216  = ~J'ai renvoyé Jaheira chez elle.
+
+J'ai demandé à Jaheira de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver au Quartier Général des Ménestrels.~
+@217  = ~J'ai renvoyé Jaheira chez elle.
+
+J'ai demandé à Jaheira de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver au Quartier Général des Ménestrels... mais elle m'a semblée un peu fâchée, lorsque je lui ai demandé d'y aller.~
+@218  = ~[JAHEIRA] Et bien... voilà qui est inattendu. Après tout ce que nous avons traversé, tu vas me laisser ici ?~
+@219  = ~[RUBY] Vous resterez pas longtemps dans l'coin, m'dame. Pour 5000 pièes d'or, vous s'rez à Athkatla en moins d'deux.~
+@220  = ~[JAHEIRA] Oublie ça ! <CHARNAME> et moi n'en avons pas fini, tous les deux.~
+@221  = ~[JAHEIRA] <CHARNAME>, Je... je pensais que nous étions plus que de simples compagnons de voyage. Si nous devions nous séparer maintenant, ça changera pas mal de choses dans notre relation.~
+@222  = ~[PC] Je reviendrai pour toi dans peu de temps, Jaheira. Je te le promets.~
+@223  = ~Nous sommes plus proches que ça, Jaheira. C'est justement pour ça que j'aurais cru que tu aurais compris.~
+@224  = ~[PC] J'essaie de faire pour le mieux, Jaheira. Tu le sais, au fond de toi.~
+@225  = ~[PC] Je n'aime pas cela non plus, Jaheira, mais je fais ce qu'il faut. S'il te plaît, ne me rend pas la tâche plus difficile.~
+@226  = ~[PC] Est-ce trop te demander de faire ce que je te demande sans protester, Jaheira ? J'ai pris ma décision : tu accompagnes le Capitaine Ruby.~
+@227  = ~[PC] Non, ne pars pas ! J'ai encore besoin de toi.~
+@228  = ~Il était temps. Bon, allons-y.~
+@229  = ~Je doute que ce soit une sage décision, mais je ferai selon tes ordres.~
+@230  = ~Je serai à Athkatla, au Quartier Général des Ménestrels. Prend ton temps.~
+@231  = ~Quelle folie ! Je ne vois pas d'autre explication à ton comportement. Si tu venais à retrouver tes esprits, je serai au Quartier Général des Ménestrels à Athkatla. Prends ton temps, je t'en prie.~
+@232  = ~Voilà qui est mieux. Allons-y.~
+@233  = ~Tu ne sais pas ce que tu rates. Tu pourras me retrouver ici... ou à Athkatla. Nos destins sont liés, mais leurs chemins diffèrent.~
+@234  = ~J'ai renvoyé Jan chez lui.
+
+J'ai demandé à Jan de repartir à Athkatla à bord de l'Oiseau des Mers. Je pourrai le retrouver chez lui, dans les quartiers pauvres d'Athkatla.~
+@235  = ~[JAN] Est-ce ici que nos chemins se séparent ? Dans cet endroit ? Je n'y ai pas vu le moindre navet depuis que nous y sommes arrivés.~ [JANJAN82]
+@236  = ~[RUBY] Pour 10000 pièces d'or, vous aurez tous les navets que vous pourrez engloutir.~
+@237  = ~[JAN] Ah, mais les navets ne servent pas seulement qu'à se restaurer ! Mais qu'en dit <CHARNAME> ? C'est vraiment ce que tu veux ?~
+@238  = ~[PC] Si je le pouvais, je serais heureux de te garder avec moi, Jan. Malheureusement, je n'ai pas le choix. Nous nous reverrons bientôt, je te le promets.~
+@239  = ~[PC] J'essaie de faire pour le mieux, Jan. Essaye de comprendre, je t'en prie.~
+@240  = ~[PC] Quoi ? Pas d'histoire ennuyeuse sur les griffons ? Allez, Jan, va-t'en. Je te retrouverai... peut-être.~
+@241  = ~[PC] Hmm, tu risquerais de t'attirer de gros ennuis, seul avec tes outils. Je devrais peut-être garder un oeil sur toi.~
+@242  = ~[PC] Mais que disais-je ? Mais que ferais-je sans ton... d'ailleurs, c'est quoi, cette chose ? Bref, reste avec moi, Jan.~
+@243  = ~Comme le disait oncle Scratchy, "un vrai ami est un menteur glabre". Séparons-nous ici, camarade. J'ai hâte de chatouiller ces pirates avec mes carreaux d'arbalète.~
+@244  = ~Ah, tu ne peux pas blâmer le gnome d'avoir essayé. Je vais retourner au domaine Jansen, dans les bas-quartiers. Pour nous retrouver, tu n'auras qu'à faire confiance à ton odorat !~
+@245  = ~J'aurais juré entendre Golodon. Ah, si tu changes d'avis, et que tu apprends les bonnes manières, tu pourras me retrouver chez moi, avec ma famille, dans les bas-quartiers. Ne te presse surtout pas.~ [JANJAN25]
+@246  = ~Ah, tu es un ami, un vrai... ou alors, c'est que tu en veux à mes navets !~ ~Ah, tu es une amie, une vraie... ou alors, c'est que tu en veux à mes navets !~
+@247  = ~J'ai renvoyé Keldorn chez lui.
+
+J'ai demandé à Keldorn de repartir à Athkatla à bord de l'Oiseau des Mers. Je pourrai le retrouver à l'Ordre du Coeur Radieux.~
+@248  = ~[KELDORN] Dois-je me faire transporter en bateau, telle une vulgaire marchandise ?~
+@249  = ~[RUBY] A 10000 pièces d'or, z'êtes un peu plus qu'une vulgaire marchandise.~
+@250  = ~[KELDORN] Je ne remets point en cause votre droit d'embaucher et de renvoyer qui vous voulez de votre compagnie, mais j'ai juré de vous porter assistance dans vos aventures. N'avez-vous plus besoin de mes services ?~
+@251  = ~[PC] Non, Keldorn. J'ai encore besoin de vous, mais j'aimerais que vous restiez à Athkatla quelques temps.~
+@252  = ~[PC] J'essaie de faire au mieux, Keldorn. Je gage que vous êtes à même de comprendre.~
+@253  = ~[PC] Je ne veux plus entendre vos sermons. Retournez à Athkatla. Si j'ai de nouveau besoin de vous, je vous y retrouverai.~
+@254  = ~[PC] Peut-être ai-je pris une décision trop hâtive. Restez encore un peu avec moi, Keldorn.~
+@255  = ~[PC] Non ! Votre compagnie et vos conseils me sont par trop précieux pour ça. Restez à mes côtés. Je renverrai quelqu'un d'autre, s'il le faut.~
+@256  = ~Je suis fort aise de me retrouver de nouveau à vos côtés.~
+@257  = ~Je comprends.~
+@258  = ~Dans ce cas, je retournerai dans les quartiers de l'Ordre du Coeur Radieux, à Athkatla, et j'y attendrai vos directives.~
+@259  = ~Que voilà des paroles bien rudes. Toutefois, je comprends qu'une épreuve bien lourde pèse sur vos épaules. Je vais me montrer charitable et oublier que vous m'avez parlé si rudement.~
+@260  = ~Allez-y, mon ami. Je suivrai.~ ~Allez-y, mon amie. Je suivrai.~
+@261  = ~Êtes-vous prêt à revenir voyager avec moi ?~
+@262  = ~Il est bien ennuyeux de rester ici à ne rien faire. Néanmoins, une fois que je retournerai à Athkatla, je gage que je retrouverai bien vite de quoi m'occuper.~
+@263  = ~J'ai renvoyé Korgan chez lui.
+
+J'ai demandé à Korgan de repartir à bord de l'Oiseau des Mers. Je pourrai le retrouver à la Couronne de Cuivre.~
+@264  = ~[KORGAN] Mettre un nain dans un bateau plein d'pépées, pour sûr, toi, tu cherches les emmerdes.~
+@265  = ~[RUBY] Vous serez prié d'vous tenir tranquille, ou alors j'demande à Jasmine d'vous faire vot'fête, 10000 pièces d'or ou pas.~
+@266  = ~[KORGAN] Bah, tu sais pas t'amuser, espèce de rabat-joie. Alors, <CHARNAME>, tu décides quoi ?~
+@267  = ~[PC] Je n'aime pas l'idée de te congédier, mais je n'ai pas le choix. Je te retrouverai à Athkatla.~
+@268  = ~[PC] J'essaie de faire au mieux, Korgan. J'espère que tu comprends.~
+@269  = ~[PC] Je refuse de supporter ton odeur plus avant ! Monte dans ce bateau !~
+@270  = ~[PC] Hmmm, je devrais peut-être te garder avec moi encore un peu.~
+@271  = ~[PC] Tu n'as pas compris que je plaisantais ? J'ai besoin de toi à mes côtés.~
+@272  = ~Har, har ! J'savais que tu t'pointerais tôt ou tard.~
+@273  = ~D'accord. J'serai à la Couronne de Cuivre.~
+@274  = ~Har, har ! T'es un marrant, toi ! Continue comme ça, et j'te brise les rotules. J'serai à la Couronne de Cuivre.~ ~Har, har ! T'es une marrante, toi ! Continue comme ça, et j'te brise les rotules. J'serai à la Couronne de Cuivre.~
+@275  = ~Ouais, j'sais. T'as besoin de moi, et tout. On y va.~
+@276  = ~J'ai encore besoin de tes talents, Korgan.~
+@277  = ~Quoi, t'as un tonnelet en trop ? Ca tombe bien, j'ai l'mal de mer à force d'rester sur c'pont.~
+@278  = ~Ouais, fais-donc ça.~
+@279  = ~J'ai renvoyé Mazzy chez elle.
+
+J'ai demandé à Mazzy de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver dans la maison de la famille Fentan, si je devais avoir de nouveau besoin de ses services à l'avenir.~
+@280  = ~J'ai renvoyé Mazzy chez elle.
+
+J'ai demandé à Mazzy de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver dans la maison de la famille Fentan. Selon elle, si, à l'avenir, j'ai de nouveau besoin de son aide, mes manières auront intérêt à s'être améliorées.~
+@281  = ~[MAZZY] Que voilà une surprise, et déplaisante qui plus est. Jamais je n'aurais pensé que vous vous sépareriez de ma compagnie dans un endroit tel que celui-ci.~
+@282  = ~[RUBY] On vous ramènera chez vous en un seul morceau, mam'zelle. Pour 5000 pièces d'or, on vous raccompagnera là où vous voulez... dans les limites d'Athkatla.~
+@283  = ~[MAZZY] Je sais prendre soin de moi, mais merci bien pour cette offre. <CHARNAME>, voulez-vous vraiment que nous nous séparions ?~
+@284  = ~[PC] Je n'aime pas cela non plus, mais nous n'avons pas le choix, Mazzy. Dites-moi où vous irez ; je vous y retrouverai dès que je serai rentré.~ ~[PC] Je n'aime pas cela non plus, mais nous n'avons pas le choix, Mazzy. Dites-moi où vous irez ; je vous y retrouverai dès que je serai rentrée.~
+@285  = ~[PC] J'essaie de faire au mieux, Mazzy. J'espère que vous comprenez.~
+@286  = ~[PC] Voyez donc Mazzy ! Elle se fait virer, et pourtant, elle continue à se donner de grands airs.~
+@287  = ~[PC] Je ne pense pas que ce soit une si bonne idée que vous partiez, en fait.~
+@288  = ~Souhaitez-vous que je rejoigne votre compagnie ?~
+@289  = ~Je serai heureuse de remettre ma lame à votre service.~
+@290  = ~Vous auriez dû être moins désagréable avec moi. Je vais retourner chez ma famille. Si vous revenez me voir, peut-être prendrai-je votre effort de venir me retrouver comme une preuve de votre repentance à mon égard.~
+@291  = ~Si vous n'avez pas besoin de moi pour le moment, je vais retourner chez ma famille, à Franc-Marché. Si vous avez besoin d'un compagnon de voyage à l'avenir, j'y serai.~
+@292  = ~Je n'apprécie guère le ton que vous employez. Vous feriez mieux de changer d'attitude à mon égard, si vous voulez faire de nouveau appel à mes services dans le futur. Je vais retourner chez ma famille à Franc-Marché. Ne vous sentez pas obligé de m'y retrouver.~ ~Je n'apprécie guère le ton que vous employez. Vous feriez mieux de changer d'attitude à mon égard, si vous voulez faire de nouveau appel à mes services dans le futur. Je vais retourner chez ma famille à Franc-Marché. Ne vous sentez pas obligée de m'y retrouver.~
+@293  = ~Excellent. Allons-y.~
+@294  = ~Salutations.~
+@295  = ~J'ai besoin de votre aide, une fois encore.~
+@296  = ~Je souhaitais vous présenter mes excuses quant à ce que je vous ai dit plus tôt. Pourriez-vous revenir à mes côtés, s'il vous plaît ?~
+@297  = ~Je voulais juste voir comment vous alliez.~
+@298  = ~Vous avez appris la courtoisie, semble-t'il. Bien, je vais vous rejoindre, mais je saurais m'en souvenuir, si vous veniez à faire de la grossièreté une habitude.~
+@299  = ~Je vais bien, merci. J'ai le mal de mer, mais uniquement lorsque le voyage en bateau commence.~
+@300  = ~J'ai renvoyé Minsc chez lui.
+
+J'ai demandé à Minsc de repartir à bord de l'Oiseau des Mers. Je pourrai le retrouver à la Couronne de Cuivre.~
+@301  = ~[MINSC] <CHARNAME> ne peut pas renvoyer Minsc à bord d'un bateau tel un sac de grain ! Et Bouh ? Le voyage serait bien trop cher pour lui. Il *est* un hamster géant de l'espace miniature !~
+@302  = ~[RUBY] Et bin z'avez d'la chance, mon ami. Les hamsters géants de l'espace voyagent à l'oeil. Mais ça coûte toujours 10000 pièces d'or pour vous, par contre.~
+@303  = ~[MINSC] Ca change la donne, pour sûr... Mais Bouh aimerait savoir si tu souhaites que nous restions avec le groupe.~ [MINSC90]
+@304  = ~[PC] Je ne sais pas comment je vais faire sans vous deux, Minsc, mais je vais devoir essayer. Va à Athkatla, je t'y retrouverai.~
+@305  = ~[PC] J'essaie de faire au mieux, Minsc. J'espère que tu comprends.~
+@306  = ~[PC] Eloigne ce hamster de moi et monte sur ce navire ! J'en ai assez de vous deux.~
+@307  = ~[PC] Hmmm, à bien y réfléchir, ce serait sans doute trop demander au Capitaine Ruby de s'occuper de vous deux. Je devrais peut-être mieux te garder avec moi.~
+@308  = ~[PC] Bah, on ne change pas une équipe qui gagne. <CHARNAME>, Minsc et Bouh, à l'aventure !~
+@309  = ~Minsc, Bouh et toi ! La meilleure équipe de tous les Royaumes !~
+@310  = ~Bouh n'aime pas les au revoir, mais nous nous reverrons. Nous serons dans cette taverne malodorante des bas-quartiers, la Couronne de Cuivre.~
+@311  = ~Tes mots enragent Minsc autant que le feraient une centaine de morsures de fourmis, mais Bouh dit que le stress te fait dire des choses que tu viendras à regretter.~
+@312  = ~Retrouve-moi à la Couronne de Cuivre.~
+@313  = ~J'ai renvoyé Nalia chez elle.
+
+J'ai demandé à Nalia de repartir vers le continent à bord de l'Oiseau des Mers. Je pourrai la retrouver dans son château.~
+@314  = ~J'ai renvoyé Nalia chez elle.
+
+J'ai demandé à Nalia de repartir vers le continent à bord de l'Oiseau des Mers. Je pourrai la retrouver à la Couronne de Cuivre.~
+@315  = ~[NALIA] <CHARNAME> ! Vous ne pouvez pas me laisser ici ! Pas avec tous ces rufians dans les parages !~
+@316  = ~[RUBY] Il n'y a aucun rufian sur mon navire ! On est peut-être un peu rustres parfois, mais on est des femmes honnêtes.~
+@317  = ~[NALIA] Mais, <CHARNAME>, pouvez-vous vraiment vous le permettre ? Avec tout cet argent, vous pourriez aider tant de nécessiteux. Et je suis presque sûre qu'elle essaye de vous voler.~
+@318  = ~[RUBY] Nan mais dites ! C'est 5000 pièces d'or pour les femmes, 10000 pour les hommes. Je n'ai pas modifié mes tarifs, et aucun capitaine digne de c'nom vous fera un meilleur prix... en tout cas, pour ceux qui accepteront de faire c'boulot.~
+@319  = ~[NALIA] C'est hors de propos ! <CHARNAME>, voulez-vous vraiment me renvoyer ?~
+@320  = ~[PC] Bien sûr que non, Nalia, mais je n'ai pas le choix. Accompagnez le Capitaine Ruby, et je vous retrouverai dès que je serai sur le continent.~
+@321  = ~[PC] J'essaie de faire au mieux, Nalia. J'espère que vous comprenez.~
+@322  = ~[PC] N'arrêterez-vous donc jamais de chouiner ? Faites-moi confiance, Nalia, nous devons nous séparer.~
+@323  = ~[PC] Oh, bon, d'accord. Vous pouvez rester avec moi.~
+@324  = ~[PC] En fait, je crois que je serai mieux avec vous que sans vous.~
+@325  = ~Enfin ! J'ai failli penser que jamais vous ne retourneriez me rechercher !~
+@326  = ~Oh, la barbe !~
+@327  = ~Je serai au château.~
+@328  = ~Je serai à la Couronne de Cuivre.~
+@329  = ~Je sais que vous ne le pensez pas vraiment ! En fait, je vais même faire comme si vous ne l'aviez jamais dit !~
+@330  = ~C'est mieux.~
+@331  = ~Allons-y, comme avant.~
+@332  = ~Peut-être devrions-nous poursuivre nos chemins séparément pendant quelques temps.~
+@333  = ~Oh, d'accord.~
+@334  = ~J'ai renvoyé Valygar chez lui.
+
+J'ai demandé à Valygar de repartir à bord de l'Oiseau des Mers. Je pourrai le retrouver dans sa propriété des collines d'Umar.~
+@335  = ~[VALYGAR] Si vous ne vouliez pas que je vous accompagne, vous auriez simplement pu me laisser à Athkatla. Vous auriez économisé... combien, déjà ?~
+@336  = ~[RUBY] 10000 pièces d'or.~
+@337  = ~[VALYGAR] Hmm... J'ignorais que je valais autant. Vous voulez continuer avec moi, ou vous préférez que je retourne dans ma cabane.~
+@338  = ~[PC] Vous valez au moins dix fois plus que 10000 pièces d'or, mais je ne préfère pas que vous m'accompagniez pour le moment. Mais au moins, je sais où vous retrouver. Je reviendrai vers vous dès que j'aurai quitté cette île.~
+@339  = ~[PC] J'essaie de faire au mieux, Valygar. J'espère que vous comprenez.~
+@340  = ~[PC] Maintenant que vous en parlez, je me demande toujours pourquoi je vous ai amené avec moi. Mais peu importe, l'Oiseau des Mers va vous ramener.~
+@341  = ~[PC] Hmm... Restez avec moi. Je renverrai quelqu'un d'autre.~
+@342  = ~[PC] Que disais-je donc ? Je ne veux pas que vous partiez.~
+@343  = ~Selon vos désirs. Je vous attendrai aux collines d'Umar.~
+@344  = ~Peu importe. Je serai aux collines d'Umar.~
+@345  = ~Selon vos désirs.~
+@346  = ~J'ai renvoyé Viconia chez elle.
+
+J'ai demandé à Viconia de repartir à bord de l'Oiseau des Mers. Je pourrai la retrouver au cimetière d'Athkatla.~
+@347  = ~Viconia m'en veut. 
+
+J'avais prévu de renvoyer Viconia à Athkatla à bord de l'Oiseau des Mers, mais elle n'a pas apprécié ma façon de la traiter. Elle m'a dit que si je voulais avoir une chance de la retrouver à mes côtés un jour, je devrai la retrouver avant que le navire ne quitte Brynnlaw.~
+@348  = ~[VICONIA] Tu veux me faire monter à bord de cet ozam... ce bateau ? Tu veux me renvoyer à Athkatla ?~
+@349  = ~[RUBY] Si vous voulez faire monter un drow dans c'navire, ça va vous coûter un extra. J'vous l'ferai pour 10000, pas moins.~
+@350  = ~[VICONIA] Pfff ! Vous, les rivvil, tous des imbéciles !~
+@351  = ~[VICONIA] Et moi qui croyais que tu te différenciais des autres kivvin. M'étais-je donc trompée ?~
+@352  = ~[PC] Ce n'est pas que je veuilles te laisser ici, Viconia, pas le moins du monde, mais je n'ai pas le choix. Va à Athkatla. Je t'y retrouverai dès que j'y retournerai moi-même.~
+@353  = ~Tu ne t'es pas trompée, Viconia. J'aurais aimé ne pas avoir à te renvoyer, mais il le faut.~
+@354  = ~[PC] J'essaie de faire au mieux, Viconia. J'espère que tu comprends.~
+@355  = ~[PC] Non, Viconia. Parfois, tu me comprends mieux que je ne me comprends moi-même, et c'est pour cette raison que tu sais pourquoi je ne peux pas t'embarquer plus longtemps dans cette histoire.~
+@356  = ~[PC] Arrête de jouer les pétasses, Viconia. Tu y vas en bateau, ou à la nage, c'est compris ?~
+@357  = ~[PC] En fin de compte, je ne pense pas que ça soit une bonne idée de te faire monter dans un bateau peuplé d'étrangères. Tu restes avec moi.~
+@358  = ~[PC] Non, non, mais à quoi pensais-je donc ? Je ne peux pas te renvoyer, ça serait complètement stupide.~
+@359  = ~Bien. Peu importe ce qu'il s'est passé avant, il n'y a que peu de gens qui m'accepteraient à leurs côtés comme tu le fais.~
+@360  = ~Bah ! Maudite soit ta langue de vipère !~
+@361  = ~Je te préviens, si tu souhaites un jour bénéficier à nouveau de mon aide, tu reviens me chercher avant que ce navire ne quitte le port ou tu ne me cherches plus jamais. Et si nos chemins devaient se recroiser dans le futur, ne t'attends pas à un accueil chaleureux.~
+@362  = ~Bien. Il n'y a que peu de gens qui m'accepteraient à leurs côtés comme tu le fais.~
+@363  = ~Soit.~
+@364  = ~J'ai renvoyé Yoshimo chez lui.
+
+J'ai demandé à Yoshimo de repartir à bord de l'Oiseau des Mers vers Athkatla. Il ne semblait pas vraiment savoir où aller là-bas, mais il atterrira sans doute à la Couronne de Cuivre. Il restera un moment sur le pont d'embarquement, si je venais à changer d'avis.~
+@365  = ~[YOSHIMO] Ce bateau ne me semble pas sûr. Capitaine, serons-nous en sécurité dans ce navire ?~
+@366  = ~[RUBY] Oui, vous s'rez aussi en sécurité que chez vous. Il n'y a pas de petite dépense pour l'Capitaine Ruby dès qu'il s'agit du bien-être de son équipage... ou de ses passagers.~
+@367  = ~A partir du moment où vous payez vot'part, vous en aurez pour vot'argent, c'est ma devise. Ce s'ra 10000 pièces d'or pour vous.~
+@368  = ~[YOSHIMO] Cela me rassure. Merci bien.~
+@369  = ~<CHARNAME>, je ne souhaite pas mettre fin à notre association aussi tôt, mais peut-être une pause est-elle indiquée. Es-tu sûr de vouloir que nos routes se séparent ?~ [YOSHIM65] ~<CHARNAME>, je ne souhaite pas mettre fin à notre association aussi tôt, mais peut-être une pause est-elle indiquée. Es-tu sûre de vouloir que nos routes se séparent ?~ [YOSHIM65]
+@370  = ~[PC] Non, je ne le veux pas. Mais il le faut. Rien de personnel, c'est juste que je ne peux pas te prendre avec moi pour le moment.~
+@371  = ~[PC] J'essaie de faire au mieux, Yoshimo. J'espère que tu comprends.~
+@372  = ~[PC] Complètement ! Mon seul souhait en ce moment est que tu t'éloignes le plus loin possible de moi.~
+@373  = ~[PC] En fait, je ferais peut-être mieux de te garder bien en vue, à mes côtés.~
+@374  = ~[PC] Non, Yoshimo, ne t'en vas pas. Je me demande encore ce qui m'a pris pour suggérer ton départ.~
+@375  = ~Je me dois d'admettre que ton enthousiasme fait chaud au coeur. Mais je vais attendre ici, au cas où tu changerais d'avis.~
+
+//Jasmine
+@376  = ~Quoi vous vouloir de Jasmine ?~
+@377  = ~J'ai remarqué que vous gardiez pas mal de marchandises à côté de vous. Vous en vendez quelques unes ?~
+@378  = ~Jasmine, n'est-ce pas un nom inhabituel pour une demie-orque ?~
+@379  = ~Qu'est-ce que vous pouvez me dire sur le Capitaine Ruby ?~
+@380  = ~Pourquoi êtes-vous si dure avec Wren ? Tout ce qu'elle veut, c'est faire connaissance.~
+@381  = ~Merci d'être intervenue, avec Wren. Je craignais que les choses ne dégénèrent.~
+@382  = ~Comment une demie-orque comme vous est devenue marin ?~
+@383  = ~Vous êtes une très jolie femme, Jasmine. Et si je vous invitais à prendre une bière ou un dîner avec moi ?~
+@384  = ~Ce que vous êtes laide ! Votre mère aurait dû vous noyer à la naissance.~
+@385  = ~Désolé, j'ai dû vous bousculer par accident.~
+@386  = ~J'ai des choses à vendre. Ca vous dire ?~
+@387  = ~Oui, montrez-moi ça.~
+@388  = ~Pas pour le moment.~
+@389  = ~Vous allez aimer mes marchandises.~
+@390  = ~Jasmine être une jolie fleur de Chult. Je sais ça car je sais lire.~
+@391  = ~Maman donné à moi un nom orque stupide. Jasmine être mieux, non ?~
+@392  = ~Cap'taine Ruby être la meilleure pour naviguer sur la Mer Inviolée. Elle connaître parfaitement chaque port, chaque route maritime. Si vous avoir confiance en elle, vous aller loin.~
+@393  = ~Vous avez l'air de beaucoup l'apprécier.~
+@394  = ~Je vous crois sur parole.~
+@395  = ~Je peux lui faire confiance ?~
+@396  = ~Cap'taine Ruby avoir donné une chance à Jasmine alors que tous les autres ne voulaient même pas lui parler. Elle avoir bon coeur.~
+@397  = ~Jasmine faire confiance à Cap'taine Ruby. Vous devriez aussi.~
+@398  = ~Wren avoir déjà beaucoup d'amis. Elle ne pas avoir besoin de plus d'amis. Et *vous* ne pas être obligé d'attraper la chaude-pisse Calimshite, si vous voir ce que je veux dire.~ ~Wren avoir déjà beaucoup d'amis. Elle ne pas avoir besoin de plus d'amis. Et *vous* ne pas être obligée d'attraper la chaude-pisse Calimshite, si vous voir ce que je veux dire.~
+@399  = ~Parce que elle pas pouvoir devenir tueuse de <RACE>, plus assez de place pour elle.~
+@400  = ~Grandissez, <RACE>, et regardez autour de vous. Cap'taine Ruby être la seule à être gentille avec les demies-orques. Raison de plus pour devenir marin.~
+@401  = ~Jasmine pense que vous avoir besoin d'aller voir un docteur des yeux.~
+@402  = ~Quoi ? Vous penser que Jasmine veut connaître vous juste parce qu'un de vos parents avait du sang orque ? Vous pas malin.~
+@403  = ~Le coeur de Jasmine être déjà pris. Allez chanter la sérénade à quelqu'un d'autre.~
+@404  = ~Jasmine être laide à l'extérieur. Vous être laid à l'intérieur. Moi heureuse de pas être à votre place.~ ~Jasmine être laide à l'extérieur. Vous être laide à l'intérieur. Moi heureuse de pas être à votre place.~
+@405  = ~Ca arrive. Jasmine imposante, être bousculée souvent.~
+@406  = ~Autre chose Jasmine peut faire pour vous ?~
+
+//Wren & Anomen
+@407  = ~Vous êtes beau, et vous avez l'air héroïque ! Je pourrais m'évanouir si vous me baisiez la main.~
+@408  = ~Alors ne vaut-il mieux pas que je fasse ainsi, ma dame. Je ne souhaite pas voir quelqu'un comme vous souffrir dans un tel endroit.~
+@409  = ~Oh, quel romantisme !~
+@410  = ~Qu'est-ce que je ne ferais pas pour vous voir sans cette armure !~
+@411  = ~Preuve de modestie, ma dame. Si vous voulez bien m'excuser, mon chef m'appelle.~
+@412  = ~(soupir) Et gentleman avec ça !~
+
+//Wren & Cernd
+@413  = ~Il y a quelque chose de délicieusement sauvage, indomptable en vous. Et si nous allions dans un endroit un peu plus privé et laissions s'exprimer toute notre sauvagerie ?~
+@414  = ~Le pin pousse bien parmi les siens, tandis que les vents des marécages déforment son tronc.~
+@415  = ~Bon... Je prends ça pour un non.~
+@416  = ~On dirait des tatouages, sur votre visage. Moi aussi, j'en ai. Vous voulez les voir ?~
+@417  = ~La beauté de la nature n'est que plus majestueuse lorsqu'il reste une part de mystère.~
+@418  = ~Vous auriez pu simplement dire non.~
+
+//Wren & Edwin
+@419  = ~Je me suis toujours demandé à quoi ressemblaient les magiciens, sans leurs robes.~
+@420  = ~Ma petite beauté, ceci est un secret que l'on ne peut partager qu'avec les méritant. (Comme si elle méritait de connaître Edwin Odesseiron, la perfection faite homme.)~
+@421  = ~Et bien ! Grossier personnage !~
+@422  = ~Vous pouvez vraiment lancer des sorts ? Par exemple, si je voulais que vous nous téléportiez dans une île paradisiaque loin de tout où personne ne nous dérangerait pendant plusieurs heures, vous pourriez le faire ?~
+@423  = ~Ce serait criminel d'user du pouvoir d'un magicien pour une chose aussi triviale (bien que l'idée de partager quelques heures de passion n'est pas sans charme).~
+@424  = ~Oh.~
+
+//Wren & Haer'Dalis
+@425  = ~Vous avez l'air exotique. Nous devrions aller dans un endroit plus privé, vous pourriez m'y raconter votre histoire.~
+@426  = ~Hélas, très chère, cette histoire serait par trop ennuyeuse pour le conteur... et son auditoire.~
+@427  = ~Une autre fois, peut-être ?~
+@428  = ~Votre voix est magnifique. Vous pouvez me lire ce poème ?~
+@429  = ~Je me dois de décliner cette offre. Les poèmes d'amour tels que celui-ci ne veulent rien dire s'ils ne viennent pas du coeur.~
+@430  = ~(soupir) Je sais, mais vous auriez pu faire semblant.~
+
+//Wren & Keldorn
+@431  = ~Vous m'avez tout l'air d'être un homme d'expérience ! Suivez-moi. Eloignons-nous des autres et partagez cette expérience avec moi.~
+@432  = ~Je suis flatté, mais je me dois de refuser.~
+@433  = ~Quel dommage. Les hommes plus âgés sont tellement plus endurants.~
+@434  = ~Vous êtes si beau et si chevaleresque. Je parie que toutes les filles vous courent derrière.~
+@435  = ~Merci du compliment. Mais cela fait bien longtemps que je n'ai pratiqué la séduction... et je ne souhaite pas recommencer.~
+@436  = ~Quel dommage ! J'aurais tellement adoré que vous essayiez sur moi.~
+
+// Wren & Minsc
+@437  = ~Ohh... regardez-moi tous ces muscles ! J'aimerais tellement vous voir sans vos vêtements.~
+@438  = ~Minsc ne dirait pas non, mais Bouh dit que ce serait inconvenant.~
+@439  = ~Exactement ce qu'il me faut. Un humain bâti comme un roc avec un chaperon imaginaire.~
+@440  = ~Bouh n'est pas imaginaire ! C'est un hamster de l'espace géant miniature !~
+@441  = ~...Et qui parle aux animaux, en plus. Une autre fois, peut-être...~
+@442  = ~Quelle grosse et puissante arme vous avez là...~
+@443  = ~La jeune fille veut regarder de plus près ? Je vais la retirer hors de son fourreau et la lui montrer.~
+@444  = ~Je ne parlais pas de celle sur votre dos.~
+@445  = ~Tu veux dire...~
+@446  = ~Bouh est choqué par une telle suggestion ! Quelle vilaine fille tu fais, pour faire rougir ainsi un hamster.~
+
+//Wren & Valygar
+@447  = ~Je les aime quand ils sont forts et silencieux.~
+@448  = ~Moi aussi. Surtout le silence.~
+@449  = ~Votre visage est porteur de mystères et de sombres présages. Nous devrions nous éloigner, vous pourrez me montrer quelques uns d'entre eux...~
+@450  = ~Je préfère garder mes mystères pour moi.~
+@451  = ~Quel rabat-joie.~
+
+//Wren & Yoshimo
+@452  = ~Vous ne semblez pas être du coin. Allons à la taverne, vous pourrez me parler de là d'où vous venez.~
+@453  = ~Une offre alléchante, mais que je dois décliner, j'en ai peur.~
+@454  = ~Alors peut-être une autre fois ?~
+@455  = ~J'aime le danger. Pas vous ?~
+@456  = ~Bizarrement, non. Je préfèrerais mener une vie simple, mais certaines choses ne sont pas faites pour exister.~
+@457  = ~Quelle pitié.~
+
+//Wren & Charname & Jasmine
+@458  = ~Si vous voulez louer une place sur un navire, allez parler au Capitaine Ruby.~
+@459  = ~Bonjour.~
+@460  = ~Vous regardez quoi ?~
+@461  = ~Vous n'auriez pas vu un <RACE> canon, dans le coin ? J'aurais juré qu'il était là il y a quelques instants.~
+@462  = ~On dirait que le vent est en train de tourner.~
+@463  = ~Vous ne connaitriez pas un bon herboriste ? Quelqu'un qui se serait spécialisé dans les... ahem... infections intimes ?~
+@464  = ~Vous, les humains, êtes si gracieux... et je parie que vous êtes forts, aussi.~
+@465  = ~Arrête ça, fillette. Toi savoir que Cap'taine Ruby pas aimer que toi parler avec les passants.~
+@466  = ~Je faisais juste une observation.~
+@467  = ~On ne vous a jamais dit que vous aviez de bonnes jambes ? Elle me donnent envie d'en prendre une et de la chatouiller !~
+@468  = ~Jasmine te chatouiller de son poing si toi pas laisser le monsieur tranquille.~
+@469  = ~(soupir) Alors je me contenterai de les admirer de loin.~
+@470  = ~Hé, beau mec, ça te dirait de venir vérifier ce qu'on dit sur les petites-femmes ?~
+@471  = ~Jasmine te prévenir, Wren. Si toi pas respecter ce que la Cap'taine avoir dit sur le harcèlement des passagers, Jasmine te régler ton compte.~
+@472  = ~Mais je voulais juste faire connaissance !~
+@473  = ~Donc, si un humain fait deux fois la taille d'une petite-personne, ça veut dire que...~
+@474  = ~Ca vous dirait d'aller dans un endroit un peu plus privé avec moi ? J'ai quelque chose pour vous, et je crois que nous allons aimer tous les deux.~
+@475  = ~Hé ! Wren ! Toi éloigner ta carcasse syphilitique du monsieur tout de suite, où Jasmine aller en parler au Cap'taine.~
+@476  = ~Mais chut ! Il pourrait croire que j'ai une maladie vénérienne !~
+@477  = ~Vous le prendriez mal, si je vous disais que vous êtes canon ?~
+@478  = ~Jasmine te prévenir, toi pas embêter le monsieur.~
+@479  = ~Rabat-joie.~
+@480  = ~Je suis peut-être petite, mais j'ai la taille idéale pour ce à quoi je pense. Vous voulez savoir ce que c'est ?~
+@481  = ~Toi faire mieux de t'occuper de tes affaires, au lieu d'aguicher les hommes. Va-t'en !~
+@482  = ~Tu ne me laisses jamais m'amuser !~
+@483  = ~(soupir) Vous autres, les elfes, vous êtes si beaux et si grâcieux...~
+@484  = ~Ouais, Jasmine savoir comment toi procéder. D'abord, les compliments et les bavardages, puis Jasmine devoir expliquer au Cap'taine pourquoi il y a eu une bagarre sur le pont. Pars, ça être un ordre.~
+@485  = ~Tu es vraiment une experte dans l'art de plomber l'ambiance !~
+@486  = ~J'ai entendu dire que si on effleure les oreilles d'un elfe, ça l'excite. Je peux essayer ?~
+@487  = ~Toi remballer ta langue, toi te donner en spectacle.~
+@488  = ~Mais... je voulais juste faire une expérience ! Pour la science !~
+@489  = ~Jasmine pouvoir faire des expérience, aussi. Jasmine te balancer par dessus bord et mesurer combien de temps toi mettre à couler. Jasmine t'ordonner de le laisser tranquille !~
+@490  = ~Grosse vache.~
+@491  = ~Vos yeux sont tellement profonds ! Je pourrais me perdre en eux...~
+@492  = ~Toi pouvoir te perdre dans un canot. Toi laisser ce pauvre homme tranquille.~
+@493  = ~Mais tout le monde aime les compliments, hein ?~
+@494  = ~J'ai entendu dire que les elfes pouvaient faire l'amour pendant des heures. Et il se trouve que j'ai beaucoup de temps libre, si vous...~
+@495  = ~Toi arrêter ça ! T'éloigner du monsieur, ou toi nettoyer le pont jusqu'à ce que nous arriver à Athkatla... avec une brosse à dent.~
+@497  = ~Vous avez une voix ensorcelante. Je tombe sous votre charme. Un mot de vous, et je suis vôtre !~
+@498  = ~Ici la voix de Jasmine, fillette. Toi laisser le gars tranquille, ou Jasmine tout raconter au Cap'taine.~
+@499  = ~Oh, la barbe ! Vous n'avez pas idée du challenge que ça représente d'avoir Jasmine pour chaperon.~
+@500  = ~Votre grâce et votre charme... Que ne donnerais-je point pour vous voir n...~
+@501  = ~Toi t'arrêter ici, femme ! Toi croire que Cap'taine Ruby payer toi pour harceler les invités ? Toi mal croire.~
+@502  = ~(soupir) Vous devriez peut-être revenir un peu plus tard.~
+@503  = ~Je vois ça d'ici... vos parents, un amour interdit... c'est tellement romantique. J'aime les romances. Et vous ?~
+@504  = ~La seule chose que toi aimer être tirer un coup dans ta couchette avec homme trop saoul pour savoir ce que quoi être bon pour lui.~
+@505  = ~Jasmine ! Tu m'as blessée !~
+@506  = ~Vous devez avoir une histoire passionante, avec votre héritage demi-elfe. En ce moment, il n'y a personne dans la cabine des passagers. Nous pourrions y aller, et vous me raconterez...~
+@507  = ~Toi ne faire rien de la sorte, fillette ! Toi savoir qu'il ne faut pas désobéir au Cap'taine. On ne tient pas compagnie aux passagers.~
+@508  = ~Peut-être... oh, c'est bon. J'arrête.~
+@509  = ~Vous avez un visage vraiment bien fait. Ca me donne envie de le couvrir de baisers.~
+@510  = ~Et tes paroles donner envie à Jasmine de t'arracher les oreilles. Laisse-le, fillette. Lui pas être pour toi.~
+@511  = ~Vous savez ce qu'il y a de mieux chez les demi-elfes ? Moi non plus, mais j'aimerais bien le savoir. Vous m'accompagnez ?~
+@512  = ~Toi lui ficher la paix, fillette, ou le Cap'taine Ruby te virer de son navire. Toi bien te souvenir qu'elle avoir dit te jeter dehors si elle te reprendre sur le fait.~
+@513  = ~Elle ne me prendrait pas sur le fait si personne n'allait lui raconter, rabat-joie.~
+@514  = ~Baissez-vous, joli garçon, que je vous murmure à l'oreille.~
+@515  = ~La Cap'taine pas te conter fleurette si elle te reprendre encore à flirter avec les passagers. Toi te souvenir de ce qu'elle a dit la dernière fois.~
+@516  = ~(soupir) Je sais, je sais. Comme j'aimerais que vous n'ayez pas toutes les deux si bonne mémoire.~
+@517  = ~Vous m'avez l'air exotique. Et si nous allions quelque part, et que je vous montrais quelque chose que j'ai trouvé à Calimport.~
+@518  = ~La seule chose que toi avoir trouvé à Calimport être chaude-pisse, et toi pas vouloir la transmettre à quelqu'un d'autre.~
+@519  = ~Jasmine ! Mais tais-toi donc ! Je suis guérie, maintenant ! Vraiment !~
+@520  = ~Viens par ici, beau mec. J'aime les hommes bien charpentés.~
+@521  = ~Toi laisser ce pauvre homme tranquille, fillette. Lui pas savoir que toi faire le même coup à douzaine d'hommes dans même journée.~
+@522  = ~Ne la croyez surtout pas ! Je suis une fille bien, je vous jure. C'est juste que j'aime bien m'amuser une fois de temps en temps.~
+@523  = ~Regardez-moi ces épaules ! Elles doivent être complètement fatiguées, avec tout le travail que vous abattez. Vous devriez me laisser les masser. Ca vous fera peut-être du bien.~
+@524  = ~Laisse-le, fillette. A force d'embêter les gens, le Cap'taine finir par te cacher dans la cale.~
+@525  = ~Mais je voulais juste être gentille !~
+@526  = ~Vous êtes beau garçon ! On devrait boire un coup au Singe Vulgaire, tous les deux.~
+@527  = ~Par les bottes de Bashaba, fillette ! Toi rester ici. Jasmine te surveiller.~
+@528  = ~Alleeeeeeez... oh, laisse tomber.~
+@529  = ~Vous êtes pas mal, vous savez ? J'aimerais bien faire plus profondément connaissance avec vous, si vous voyez ce que je veux dire.~
+@530  = ~Lui pas être pour les filles comme toi, fillette. Si toi ne pas te mêler de tes affaires, toi aller faire un tour dans l'eau !~
+@531  = ~Tu ne me laisses jamais rien faire !~
+@532  = ~J'aime les hommes avec des mâchoires fortes. Venez par ici, et je vous montrerai à quel point.~
+@533  = ~Toi le laisser, Wren. Toi savoir que Cap'taine Ruby pas aimer quand toi faire ça.~
+@534  = ~N'ai-je donc pas le droit de m'amuser un peu ? Non... ne réponds pas.~
+@535  = ~Je parie que votre âme est suffisamment grosse pour mesurer la profondeur de mon esprit. Et si vous m'accompagniez pour qu'on en parle ?~
+@536  = ~Toi être encore plus grossière que tous ces singes de Brynnlaw, fillette. Toi surveiller ta langue, ou Jasmine faire faire à toi toutes les corvées jusqu'à ce que nous arriver au continent.~
+@537  = ~(soupir) Oh, d'accord. Je ferai attention.~
+@538  = ~Oooh, vous êtes exactement mon genre d'homme !~
+@539  = ~Toi être capable de dire ça à tout ce qui respire. Va-t'en !~
+@540  = ~C'est un halfelin, tout comme moi ! On ne peut même pas bavarder un peu ?~
+@541  = ~Toi bien te souvenir la dernière fois que Cap'taine avoir surpris toi en plein 'bavardage', hein ?~
+@542  = ~On ne me laisse jamais m'amuser, ici.~
+@543  = ~Salut ! Qu'est-ce qu'un si beau petit-homme comme vous fait à Brynnlaw ?~
+@544  = ~Lui attraper bientôt rougeurs si toi continuer à lui parler. Si toi bien l'apprécier, toi le laisser.~
+@545  = ~Mais elles sont presque parties, maintenant, juré !~
+@546  = ~Ohhh ! Cela fait tellement longtemps que je n'ai pas rencontré un homme de votre taille ! Que diriez-vous si je vous invitais à marcher un peu avec moi, histoire de faire plus ample connaissance ?~
+@547  = ~Toi pas oublier les ordres du Cap'taine. Toi faire attention à tes manières avec les invités. Toi compris ?~
+@548  = ~(soupir) Oui, oui.~
+@549  = ~Qu'en dites-vous ? Vous et moi...~
+@550  = ~Va-t'en ! Toi te souvenir de ce que Cap'taine avoir dit si elle te reprendre à ennuyer un autre invité.~
+@551  = ~(soupir) Je sais, je sais... mais ça fait au moins une journée...~
+@552  = ~Je parie que votre maison vous manque terriblement. Moi aussi. On devrait aller dans un endroit plus privé, histoire de nous consoler mutuellement...~
+@553  = ~Laisse-le, fillette. Le Cap'taine pas aimer que toi embêter invités.~
+@554  = ~Mais je faisais juste... laisse tomber.~
+@555  = ~Je ne suis pas aussi directe, d'habitude...~
+@556  = ~Oh que si. Ne te mêle pas des affaires du monsieur, ou toi être sévèrement punie.~
+@557  = ~Tu ne m'as même pas laissé une chance...~
+@558  = ~J'ai entendu dire que les gnomes étaient de fameux inventeurs. Il se trouve que j'ai inventé quelque chose que vous n'avez jamais vu. Vous voulez voir ?~
+@559  = ~Toi t'arrêter maintenant, fillette. Toi savoir ce que Cap'taine te réserver si elle te reprendre encore.~
+@560  = ~(soupir) Oh, bon, d'accord.~
+@561  = ~Vous avez un nez parfait !~
+@562  = ~On ne voit pas beaucoup de gnomes dans le coin. Et si nous allions faire une promenade, vous pourriez en profiter pour me parler un peu de vous ?~
+@563  = ~Toi rester ici, ou Jasmine te tirer les oreilles très fort.~
+@564  = ~Je voulais juste faire un peu connaissance, apprendre à connaître d'autres endroits...~
+@565  = ~Ouais, et dans chacun d'entre eux, toi t'être attiré des ennuis. Laisse le monsieur tranquille, et peut-être le Cap'taine Ruby te garder avec nous.~
+@566  = ~J'ai entendu dire que les gnomes étaient très forts avec les détails. Voilà qui doit être très amusant pour les dames...~
+@567  = ~Assez ! Toi arrêter ton char, ça être un ordre !~
+@568  = ~Entre le capitaine et toi, ça a été la journée la plus ennuyeuse que j'ai jamais vécue.~
+@569  = ~Avec de telles mains, vous devez faire le bonheur des dames !~
+@570  = ~Toi t'éloigner de lui, fillette. Toi savoir que pas déranger les invités.~
+@571  = ~Mais on ne peut pas s'amuser un peu, ici ?~
+@572  = ~Il parait que les gnomes sont intelligents. J'aimerais savoir à quel point s'étend votre intelligence quand il s'agit de...~
+@573  = ~Si lui être intelligent, lui savoir que tenir la jambe à des traînées dans des ports mal famés pas être bien pour lui.~
+@574  = ~Tu as de ces mots, Jasmine !~
+@575  = ~Je me suis toujours demandé ce que ça fait d'être avec un demi-orque. Vous êtes si imposant, et... tellement... imposant !~
+@576  = ~Ca pas être bon à dire, Wren, même pour toi. Toi t'éloigner du monsieur et Jasmine pas raconter au Cap'taine ce que que toi vient de dire.~
+@577  = ~Oh, non ! Ne dis rien au Capitaine ! J'arrête.~
+@578  = ~Allez, pas besoin de jouer les gentils avec moi. J'aime quand c'est brutal.~
+@579  = ~Alors toi avoir beaucoup de plaisir si toi continuer à embêter les passants. Cap'taine Ruby avoir dit qu'elle te jeter dehors si elle te reprendre à jouer les pétasses. Et toi savoir que personne d'autre vouloir t'engager.~
+@580  = ~(soupir) Oui, je sais.~
+@581  = ~J'ai entendu dire que les demi-orques étaient meilleurs que les humains lorsque... vous savez...~
+@582  = ~Toi mieux faire de pas écouter tout ce que toi entendre dire. Toi le laisser, et te mêler de tes affaires.~
+@583  = ~J'aime les hommes puissants. Et je suis sûre que vous l'êtes...~
+@584  = ~Jasmine te jeter par-dessus bord si toi pas arrêter d'embêter les invités. Ca être assez puissant pour toi ?~
+@585  = ~Mais je voulais juste... oh, laisse tomber.~
+@586  = ~Vous êtes pas mal, pour un demi-orque. Et si nous nous éloignons des autres ? Je vais vous montrer quelque chose qui vaut le détour.~
+@587  = ~Si lui pas être malin, lui attraper la chaude-pisse.~
+@588  = ~Jasmine ! Tu n'étais pas obligée de lui dire ça ! Les rougeurs sont presques parties, et en plus, je suis certaine qu'ils ont un prêtre avec eux.~
+@589  = ~Vous avez déjà été avec une femme aussi petite que moi ? Ca vous changerait la vie.~
+@590  = ~Ca être le cas si lui pas avoir bon guérisseur avec lui. Toi t'éloigner de lui. Nous pas besoin problèmes.~
+@591  = ~(soupir) Pourquoi faut-il que tu gâches tout ?~
+@592  = ~Je n'ai besoin de rien pour le moment.~ 

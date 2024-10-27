@@ -1,0 +1,42 @@
+
+// b!jaheira.baf - installs if player opts to have Homeward bound *not* kill BioWare romances
+
+IF 
+    Global("B!HBJaheiraSail","GLOBAL",3) //Jaheira recruited, romance already restarted once
+    Global("B!HBDidIt","LOCALS",2) 
+    InParty(Myself) 
+    !Global("JaheiraRomanceActive","GLOBAL",0) 
+    !Global("JaheiraRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("B!HBDidIt","LOCALS",3) //Romance dies again, you're on your own.
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!JaheiraSail","GLOBAL",3) 
+    GlobalGT("LoveTalk","LOCALS",0)
+    GlobalLT("LoveTalk","LOCALS",58)
+    Global("JaheiraRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("JaheiraRomanceActive","GLOBAL",1)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("LoveTalk","LOCALS",1) 
+        RealSetGlobalTimer("JaheiraRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!JaheiraSail","GLOBAL",3) 
+    GlobalGT("LoveTalk","LOCALS",57)
+    Global("JaheiraRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("JaheiraRomanceActive","GLOBAL",2)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("LoveTalk","LOCALS",1) 
+        RealSetGlobalTimer("JaheiraRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 

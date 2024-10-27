@@ -1,0 +1,42 @@
+
+// b!anomen.baf - installs if player opts to have Homeward Bound *not* kill BioWare romances
+
+IF 
+    Global("B!HBAnomenSail","GLOBAL",3) //Anomen recruited, romance already restarted once
+    Global("B!HBDidIt","LOCALS",2) 
+    InParty(Myself) 
+    !Global("AnomenRomanceActive","GLOBAL",0) 
+    !Global("AnomenRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("B!HBDidIt","LOCALS",3) //Romance dies again, you're on your own.
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!AnomenSail","GLOBAL",3) 
+    GlobalGT("Lovetalk","LOCALS",0)
+    GlobalLT("Lovetalk","LOCALS",28)
+    Global("AnomenRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("AnomenRomanceActive","GLOBAL",1)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("Lovetalk","LOCALS",1) 
+        RealSetGlobalTimer("AnomenRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 
+
+IF 
+    InParty(Myself) 
+    Global("B!HBDidIt","LOCALS",1) //Only sets if PC wasn't a jackass when sending the companion home
+    Global("B!AnomenSail","GLOBAL",3) 
+    GlobalGT("Lovetalk","LOCALS",27)
+    Global("AnomenRomanceActive","GLOBAL",3) 
+THEN 
+    RESPONSE #100 
+        SetGlobal("AnomenRomanceActive","GLOBAL",2)   //Here's your big chance. Don't blow it.
+        IncrementGlobal("Lovetalk","LOCALS",1) 
+        RealSetGlobalTimer("AnomenRomance","GLOBAL",3000) 
+        SetGlobal("B!HBDidIt","LOCALS",2) 
+END 
